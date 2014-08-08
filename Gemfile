@@ -59,5 +59,5 @@ group :production do
   gem "rails_12factor"
 end
 
-gem "slim"
+gem "slim-rails"
 gem "newrelic_rpm"
