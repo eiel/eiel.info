@@ -46,12 +46,13 @@ group :development do
 end
 
 group :development, :test do
-  gem "rspec-rails", "~> 3.0.0"
+  gem "awesome_print"
+  gem "capybara"
+  gem "poltergeist"
   gem "pry-rails"
   gem "pry-byebug"
   gem "pry-rescue"
-  gem "poltergeist"
-  gem "awesome_print"
+  gem "rspec-rails", "~> 3.0.0"
 end
 
 group :production do
