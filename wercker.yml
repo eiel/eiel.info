@@ -1,11 +1,8 @@
-box: wercker/rvm
+box: inwy/ubuntu12.04-ruby2.1.2
 services:
   - wercker/postgresql
 build:
   steps:
-    # Uncomment this to force RVM to use a specific Ruby version
-    - rvm-use:
-        version: 2.1.2
     - bundle-install
     - rails-database-yml
     # A custom script step, name value is used in the UI
@@ -24,7 +21,8 @@ build:
         code: bundle exec rake
 deploy:
   steps:
-    - heroku-deploy
+    - heroku-deploy:
+        install-toolbelt: true
     - script:
         name: Update database
         code: heroku run rake db:migrate --app $HEROKU_APP_NAME
