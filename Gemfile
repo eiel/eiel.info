@@ -61,5 +61,6 @@ group :production do
 end
 
 gem "active_hash"
+gem 'coveralls', require: false
 gem "slim-rails"
 gem "newrelic_rpm"
