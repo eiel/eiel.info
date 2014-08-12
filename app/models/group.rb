@@ -1,0 +1,25 @@
+class Group < ActiveHash::Base
+  self.data = [
+    {name: "すごい広島",
+     url: "http://great-h.github.io/",
+     description: "毎週水曜日 18時から21時にITエンジニアなどがあつまって技術的な話をしたりしていします。"},
+    {name: "LT駆動開発",
+     url: "https://github.com/LTDD/Sessions/wiki",
+     description: "毎月第一土曜日に行われるIT勉強会です。発表者になると勉強になるというのをコンセプトに、5分から10分程度の発表を参加者が行うことで勉強します。毎月ライトリングトークを毎月行うことを前提に普段の開発をしようということでLT駆動開発と名付けられました。"},
+    {name: "Hiroshima.rb",
+     url: "http://hiroshimarb.github.io/",
+     description: "プログラミングRubyの地域コミュニティです。毎月第一、三木曜日の19時から21時にコワーキングスペース ShakeHandsに集まって活動しています。"},
+    {name: "日本Androidの会 中国支部",
+     url: "http://www.android-group.jp/index.php?%A5%EF%A1%BC%A5%AD%A5%F3%A5%B0%A5%B0%A5%EB%A1%BC%A5%D7%2F%C3%E6%B9%F1%BB%D9%C9%F4",
+     description: "日本Androidの会の中国地方のコミュニティです。なぜかスタッフです。"},
+    {name: "CSS Nite in HIROSHIMA",
+     url: "http://cssnite.webtouchmeeting.com/",
+     description: "Web制作に関わる方のためのセミナーイベントの広島版です。なぜだかわからないけど、2013年ぐらいから副委員長です。"},
+    {name: "Augment8",
+     url: "http://augment8.org/",
+     description: "デジタル技術を駆使して各種イベントを盛り上げるためにクリエイターが集まって生まれたクリエイティブユニットです。水色としてひっそり活動しています。"},
+    {name: "広探ゲーム",
+     url: "http://www.hirotangame.net/",
+     description: "広島の市内電車をつかったスゴロクゲームです。サブ開発者として応援しています。"},
+  ]
+end

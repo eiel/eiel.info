@@ -60,5 +60,6 @@ group :production do
   gem "rails_12factor"
 end
 
+gem "active_hash"
 gem "slim-rails"
 gem "newrelic_rpm"

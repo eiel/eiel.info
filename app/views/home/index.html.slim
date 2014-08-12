@@ -1,1 +1,16 @@
-h1 eiel.info
+header
+  h1 eiel.info
+article
+  header
+    h1 ここは何?
+  section
+    p
+      | eiel とか eielh とかいうアカウントで活動しているプログラマをしている人のウェブサイトです。
+article
+  header
+    h1 参加コミュニティやグループ
+  section
+    - @groups.each do |group|
+      h1
+        a href=group.url = group.name
+      p = group.description
