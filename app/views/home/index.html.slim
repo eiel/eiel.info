@@ -6,6 +6,11 @@ article
   section
     p
       | eiel とか eielh とかいうアカウントでプログラマをしている人のウェブサイトです。
+  section
+    - @sns.each do |s|
+      a href=s.url
+        = fa_icon s.key
+
 article
   header
     h1 参加コミュニティやグループ
