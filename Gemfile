@@ -63,5 +63,6 @@ end
 gem "active_hash"
 gem 'coveralls', require: false
 gem "font-awesome-rails"
+gem "redcarpet"
 gem "slim-rails"
 gem "newrelic_rpm"

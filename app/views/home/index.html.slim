@@ -22,6 +22,15 @@ article
 
 article
   header
+    h1 作成した iOS アプリケーション
+  section
+    - @ios_applications.each do |app|
+      h1
+        a href=app.url = app.name
+      = raw markdown(app.description)
+
+article
+  header
     h1 管理しているウェブサイト
   section
     - @sites.each do |site|

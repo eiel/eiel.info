@@ -3,5 +3,6 @@ class HomeController < ApplicationController
     @groups = Group.all
     @sns = SNS.all
     @sites = Website.all
+    @ios_applications = IosApplication.all
   end
 end
