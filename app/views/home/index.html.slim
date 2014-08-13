@@ -20,6 +20,15 @@ article
         a href=group.url = group.name
       p = group.description
 
+article
+  header
+    h1 管理しているウェブサイト
+  section
+    - @sites.each do |site|
+      h1
+        a href=site.url = site.name
+      p = site.description
+
 footer
   header
     h1 GPG
