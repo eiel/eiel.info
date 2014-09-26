@@ -17,6 +17,18 @@
 
  */
 
+body {
+    background-color: black;
+}
+
+.wrap-main {
+    background-color: white;
+}
+
+.main-image {
+    margin: 0 0 2em 0;
+}
+
 .sns {
     list-style-type: none;
     margin: 0;
@@ -27,7 +39,7 @@
     margin: 2px;
 }
 
-.sticky {
+.fixed {
     filter:alpha(opacity=0.8);
     -moz-opacity: 0.8;
     opacity: 0.8;
@@ -35,6 +47,8 @@
     border-width: 0 0 1px 0;
 }
 
-.main-image {
-    margin: -50px 0 2em 0;
+pre {
+    Background-color: #eee;
+    padding: 0.8em;
+    overflow: auto;
 }

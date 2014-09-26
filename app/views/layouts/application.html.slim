@@ -14,6 +14,7 @@ html lang="ja"
     = csrf_meta_tags
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
   body
-    = render 'navi'
-    = yield
-    = render 'footer'
+    div class="wrap-main"
+      = render 'navi'
+      = yield
+      = render 'footer'

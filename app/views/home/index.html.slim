@@ -2,17 +2,15 @@ div class="main-image"
   = image_tag "main.jpg"
 
 div class="row"
-  div class="small-4 medium-3 large-3 columns"
+  div class="small-5 medium-3 large-3 columns"
     img src="https://avatars1.githubusercontent.com/u/92595?v=2&s=460"
-    br
-    br
     h4 eiel
     ul class="sns"
       - @sns.each do |s|
         li
           a href=s.url = fa_icon s.key
 
-  div class="small-8 medium-9 large-9 columns"
+  div class="small-12 medium-9 large-9 columns"
     div class="panel"
       h3 ここは何?
       p
