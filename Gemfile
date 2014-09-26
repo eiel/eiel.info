@@ -68,3 +68,5 @@ gem "font-awesome-rails"
 gem "redcarpet"
 gem "slim-rails"
 gem "newrelic_rpm"
+
+gem 'foundation-rails'
