@@ -26,3 +26,15 @@
     display: inline;
     margin: 2px;
 }
+
+.sticky {
+    filter:alpha(opacity=0.8);
+    -moz-opacity: 0.8;
+    opacity: 0.8;
+    border-style: solid;
+    border-width: 0 0 1px 0;
+}
+
+.main-image {
+    margin: -50px 0 2em 0;
+}
