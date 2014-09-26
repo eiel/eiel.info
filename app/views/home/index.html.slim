@@ -1,48 +1,65 @@
-header
-  h1 eiel.info
-article
-  header
-    h1 ここは何?
-  section
-    p
-      | eiel とか eielh とかいうアカウントでプログラマをしている人のウェブサイトです。
-  section
-    - @sns.each do |s|
-      a href=s.url
-        = fa_icon s.key
+= image_tag "main.jpg"
 
-article
-  header
-    h1 参加コミュニティやグループ
-  section
+br
+br
+
+div class="row"
+  div class="small-4 medium-3 large-3 columns"
+    img src="https://avatars1.githubusercontent.com/u/92595?v=2&s=460"
+    br
+    br
+    h4 eiel
+    ul class="sns"
+      - @sns.each do |s|
+        li
+          a href=s.url = fa_icon s.key
+
+  div class="small-8 medium-9 large-9 columns"
+    div class="panel"
+      h3 ここは何?
+      p
+        | eiel とか eielh とかいうアカウントでプログラマをしている人のウェブサイトです。主にRuby on RailsやiOSアプリケーションを作成しています。IT勉強会の運営などもしています。
+
+hr
+
+div class="row"
+  div class="medium-12 large-12 columns"
+    h3 参加コミュニティ
+    p 運営/参加をしているコミュニティやグループの一覧です。
     - @groups.each do |group|
-      h1
-        a href=group.url = group.name
-      p = group.description
+      div class="medium-6 large-4 columns"
+        div class="panel"
+          h4
+            a href=group.url = group.name
+          p = group.description
 
-article
-  header
-    h1 作成した iOS アプリケーション
-  section
+  div class="large-12 columns"
+    h3 iOS アプリケーション
+    p
+      | 作成したiOSのアプリケーションです。iTunesからダウンロードできます。
     - @ios_applications.each do |app|
-      h1
-        a href=app.url = app.name
-      = raw markdown(app.description)
+      div class="medium-6 large-4 columns"
+        div class="panel"
+          h4
+            a href=app.url = app.name
+          = raw markdown(app.description)
 
-article
-  header
-    h1 管理しているウェブサイト
-  section
+  div class="large-12 columns"
+    h3 ウェブサイト
+    p 運営しているウェブサイトです。ブログもあればウェブアプリケーションもまざっています。
     - @sites.each do |site|
-      h1
-        a href=site.url = site.name
-      p = site.description
+      div class="medium-6 large-4 columns"
+        div class="panel"
+          h4
+            a href=site.url = site.name
+          p = site.description
 
-footer
-  header
-    h1 GPG
-  pre
-    | Key fingerprint = 7E3C 0C7E 0C22 FD81 D98F  55EE 0ABB ACAB CA56 6D81
-      uid                  Tomohiko Himura &lt;eiel.hal at gmail.com&gt;
-      uid                  Tomohiko Himura &lt;tomohiko.himura at gmail.com&gt;
-      sub   2048R/72D733CE 2009-11-21
+footer class="row"
+  div class="columns"
+    header
+     h1 GPG
+    pre
+      | Key fingerprint = 7E3C 0C7E 0C22 FD81 D98F  55EE 0ABB ACAB CA56 6D81
+        uid                  Tomohiko Himura &lt;eiel.hal at gmail.com&gt;
+        uid                  Tomohiko Himura &lt;tomohiko.himura at gmail.com&gt;
+        sub   2048R/72D733CE 2009-11-21

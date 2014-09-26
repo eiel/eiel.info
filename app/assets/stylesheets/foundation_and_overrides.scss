@@ -90,13 +90,22 @@ $include-html-global-classes: $include-html-classes;
 // $font-family-sans-serif: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 // $font-family-serif: Georgia, Cambria, "Times New Roman", Times, serif;
 // $font-family-monospace: Consolas, "Liberation Mono", Courier, monospace;
+$font-family-sans-serif: "ヒラギノ丸ゴ ProN W4", "Hiragino Maru Gothic ProN", "メイリオ", Meiryo, fantasy;
+$font-family-serif: "Times New Roman", "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "メイリオ", Meiryo, serif;
+$font-family-monospace: Menlo, Osaka-mono, "ＭＳ ゴシック", "MS Gothic", monospace;
 
 // We use these to define default font weights
 // $font-weight-normal: normal !default;
 // $font-weight-bold: bold !default;
 
+
+$maincolor : white;
+$subcolor : #4b4e5f;
+$accentcolor : #921021;
+
 // We use these as default colors throughout
 // $primary-color: #008CBA;
+$primary-color: $accentcolor;
 // $secondary-color: #e7e7e7;
 // $alert-color: #f04124;
 // $success-color: #43AC6A;
@@ -123,10 +132,14 @@ $include-html-global-classes: $include-html-classes;
 // $jet         : #222222;
 // $black       : #000000;
 
+$jet : $subcolor;
+
 // We use these to control various global styles
 // $body-bg: $white;
+$body-bg: $maincolor;
 // $body-font-color: $jet;
 // $body-font-family: $font-family-sans-serif;
+$body-font-family: $font-family-sans-serif;
 // $body-font-weight: $font-weight-normal;
 // $body-font-style: normal;
 
