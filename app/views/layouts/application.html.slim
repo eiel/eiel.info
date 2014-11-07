@@ -7,7 +7,7 @@ html lang="ja"
     meta name="keywords" content="eiel,えいる,iOS,Ruby,Haskell,Emacs"
     meta property="og:title" content="eiel.info"
     meta property="og:type" content="website"
-    meta property="og:url" content=request.uri
+    meta property="og:url" content=request.url
     meta property="og:image" content="https://avatars1.githubusercontent.com/u/92595?v=2&s=460"
     meta property="og:description" content="広島在中のプログラマのサイトです。"
     meta name="viewport" content="width=device-width, initial-scale=1.0"
@@ -20,6 +20,6 @@ html lang="ja"
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
   body
     div class="wrap-main"
-      = render 'navi'
+      / = render 'navi'
       = yield
       = render 'footer'
