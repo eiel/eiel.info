@@ -20,5 +20,21 @@ class SNS < ActiveHash::Base
         key: "google-plus",
         url: "https://plus.google.com/+himuratomohiko",
       },
+      {
+        key: "flickr",
+        url: "https://www.flickr.com/photos/43922152@N04/",
+      },
+      {
+        key: "foursquare",
+        url: "https://ja.foursquare.com/eielh",
+      },
+      {
+        key: "youtube",
+        url: "https://www.youtube.com/user/eielh/videos",
+      },
+      {
+        key: "bitbucket",
+        url: "https://bitbucket.org/eiel",
+      },
     ]
 end
