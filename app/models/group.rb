@@ -8,7 +8,7 @@ class Group < ActiveHash::Base
      description: "毎月第一土曜日に行われるIT勉強会です。発表者になると勉強になるというのをコンセプトに、5分から10分程度の発表を参加者が行うことで勉強します。毎月ライトリングトークを毎月行うことを前提に普段の開発をしようということでLT駆動開発と名付けられました。"},
     {name: "Hiroshima.rb",
      url: "http://hiroshimarb.github.io/",
-     description: "プログラミングRubyの地域コミュニティです。毎月第一、三木曜日の19時から21時にコワーキングスペース ShakeHandsに集まって活動しています。"},
+     description: "プログラミングRubyの地域コミュニティです。毎月第一、三木曜日の19時から21時にコワーキングスペース ShakeHandsに集まって活動していましたが、現在は定期的な会合は休止しています。"},
     {name: "日本Androidの会 中国支部",
      url: "http://www.android-group.jp/index.php?%A5%EF%A1%BC%A5%AD%A5%F3%A5%B0%A5%B0%A5%EB%A1%BC%A5%D7%2F%C3%E6%B9%F1%BB%D9%C9%F4",
      description: "日本Androidの会の中国地方のコミュニティです。なぜかスタッフです。"},
