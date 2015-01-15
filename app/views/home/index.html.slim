@@ -48,6 +48,16 @@ hr
             a href=site.url = site.name
           p = site.description
 
+  .large-12.columns
+    h3 ピックアップリンク
+    p その他作成物へのリンクです。
+    - @links.each do |site|
+      .medium-6.large-4.columns
+        .panel
+          h4
+            a href=site.url = site.name
+          p = site.description
+
 footer.row
   .columns
     header

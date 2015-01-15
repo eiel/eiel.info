@@ -4,5 +4,6 @@ class HomeController < ApplicationController
     @sns = SNS.all
     @sites = Website.all
     @ios_applications = IosApplication.all
+    @links = Link.all
   end
 end
