@@ -1,4 +1,4 @@
-box: inwy/ubuntu12.04-ruby2.1.2
+box: wercker/rvm
 services:
   - wercker/postgresql
 build:
