@@ -69,4 +69,8 @@ gem "font-awesome-rails"
 gem "redcarpet"
 gem "slim-rails"
 
-gem 'foundation-rails'
+gem 'sass', '>= 3.3'
+gem 'bourbon', '> 4.0'
+gem 'neat', '> 1.6'
+gem 'bitters'
+gem 'refills'

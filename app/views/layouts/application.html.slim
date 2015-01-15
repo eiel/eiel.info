@@ -11,15 +11,15 @@ html lang="ja"
     meta property="og:image" content="https://avatars1.githubusercontent.com/u/92595?v=2&s=460"
     meta property="og:description" content="広島在中のプログラマのサイトです。"
     meta name="viewport" content="width=device-width, initial-scale=1.0"
+    link href="http://fonts.googleapis.com/css?family=Questrial" rel="stylesheet" type="text/css"
     title
       | eiel.info
 
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
-    = javascript_include_tag "vendor/modernizr"
     = csrf_meta_tags
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
   body
-    div class="wrap-main"
-      / = render 'navi'
+    / = render 'navi'
+    .wrap-main
       = yield
       = render 'footer'

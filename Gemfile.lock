@@ -42,6 +42,13 @@ GEM
     awesome_print (1.6.1)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
+    bitters (0.10.1)
+      bourbon (>= 3.2)
+      sass (>= 3.2)
+      thor
+    bourbon (4.1.1)
+      sass (~> 3.3)
+      thor
     builder (3.2.2)
     bullet (4.14.0)
       activesupport (>= 3.0.0)
@@ -80,9 +87,6 @@ GEM
     execjs (2.2.2)
     font-awesome-rails (4.2.0.0)
       railties (>= 3.2, < 5.0)
-    foundation-rails (5.5.0.0)
-      railties (>= 3.1.0)
-      sass (>= 3.2.0, < 3.4)
     globalid (0.3.0)
       activesupport (>= 4.1.0)
     hike (1.2.3)
@@ -105,6 +109,9 @@ GEM
     mini_portile (0.6.2)
     minitest (5.5.1)
     multi_json (1.10.1)
+    neat (1.7.1)
+      bourbon (>= 4.0)
+      sass (>= 3.3)
     netrc (0.10.2)
     newrelic_rpm (3.9.9.275)
     nokogiri (1.6.5)
@@ -166,6 +173,7 @@ GEM
     rake (10.4.2)
     rdoc (4.2.0)
     redcarpet (3.2.2)
+    refills (0.0.2)
     rest-client (1.7.2)
       mime-types (>= 1.16, < 3.0)
       netrc (~> 0.7)
@@ -185,7 +193,7 @@ GEM
       rspec-mocks (~> 3.0.0)
       rspec-support (~> 3.0.0)
     rspec-support (3.0.4)
-    sass (3.3.14)
+    sass (3.4.9)
     sass-rails (5.0.1)
       railties (>= 4.0.0, < 5.0)
       sass (~> 3.1)
@@ -254,14 +262,16 @@ PLATFORMS
 DEPENDENCIES
   active_hash
   awesome_print
+  bitters
+  bourbon (> 4.0)
   bullet
   capybara
   coffee-rails (~> 4.0.0)
   coveralls
   font-awesome-rails
-  foundation-rails
   jbuilder (~> 2.0)
   jquery-rails
+  neat (> 1.6)
   newrelic_rpm
   pg
   poltergeist
@@ -274,7 +284,9 @@ DEPENDENCIES
   rails-html-sanitizer (~> 1.0)
   rails_12factor
   redcarpet
+  refills
   rspec-rails (~> 3.0.0)
+  sass (>= 3.3)
   sass-rails (~> 5.0.0)
   sdoc (~> 0.4.0)
   slim-rails

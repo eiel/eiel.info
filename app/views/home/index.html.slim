@@ -1,22 +1,21 @@
-.main-image style="background-image: url(#{image_path("main.jpg")});"
-  div
+.hero
+  h1 eiel.info
 
-.row
-  .small-5.medium-3.large-3.columns.small-centered.medium-left
-    img.profile src="https://avatars1.githubusercontent.com/u/92595?v=2&s=460"
-    ul.sns
-      - @sns.each do |s|
-        li
-          a href=s.url = fa_icon s.key
-.row
-  .columns
-    h3 ここは何?
-    p
-        | eiel とか eielh とかいうアカウントでプログラマをしている人のウェブサイトです。主にRuby on RailsやiOSアプリケーションを作成しています。IT勉強会の運営などもしています。
+.small-5.medium-3.large-3.columns.small-centered.medium-left
+
+ul.sns
+  - @sns.each do |s|
+    li
+      a href=s.url = fa_icon s.key
+
+.body-wrap
+  h1 ここは何?
+  p
+    | eiel とか eielh とかいうアカウントでプログラマをしている人のウェブサイトです。主にRuby on RailsやiOSアプリケーションを作成しています。IT勉強会の運営などもしています。
 
 hr
 
-.row
+.body-wrap
   .medium-12.large-12.columns
     h3 参加コミュニティ
     p 運営/参加をしているコミュニティやグループの一覧です。
@@ -58,10 +57,9 @@ hr
             a href=site.url = site.name
           p = site.description
 
-footer.row
-  .columns
-    header
-     h1 GPG
+footer.body-wrap
+  header
+    h1 GPG
     pre
       | Key fingerprint = 7E3C 0C7E 0C22 FD81 D98F  55EE 0ABB ACAB CA56 6D81
         uid                  Tomohiko Himura &lt;eiel.hal at gmail.com&gt;

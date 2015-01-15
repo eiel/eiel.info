@@ -10,29 +10,43 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require_tree .
  *= require font-awesome
  *= require_self
- *= require foundation_and_overrides
-
  */
 
+@import "bourbon";
+@import "neat";
+@import "base/base";
+
 body {
-    background-color: black;
+    background-color: #020724;
+    margin: 0;
 }
 
 .wrap-main {
     background-color: white;
 }
 
-.main-image {
+.hero {
+    h1 {
+	letter-spacing: 8px;
+	font-family: 'Questrial', sans-serif;
+	font-size: 5em;
+	color: rgba(255,255,255,0.3);
+	margin: 0;
+	z-index: 999;
+	line-height: 400px;
+    }
     width: 100%;
-    height: 100%;
-    background-size: cover;
+    height: 80%;
+    @include background-image( image_url("main.jpg") );
     background-position: center center;
     background-repeat: no-repeat;
-    display: block;
-    margin: 0 0 50px 0;
+    line-height: 00px;
+    text-align: center;
+   .profile {
+
+    }
 }
 
 .main-image div {
@@ -45,7 +59,8 @@ body {
     }
 }
 
-.profile {
+.body-wrap {
+    padding: 0 1em;
 }
 
 .title {
@@ -55,8 +70,7 @@ body {
 }
 
 .sns {
-    list-style-type: none;
-    margin: 0;
+    margin: 20px;
     text-align: center;
 }
 
