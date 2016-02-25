@@ -1,0 +1,42 @@
+title = "コミュニティ"
+description = "運営/参加をしているコミュニティやグループの一覧です。"
+
+[[items]]
+name = "すごい広島"
+description = "毎週水曜日 18時から21時にITエンジニアなどがあつまって技術的な話をしたりしていします。"
+url = "http://great-h.github.io/"
+
+[[items]]
+name = "LT駆動開発"
+description = "毎月第一土曜日に行われるIT勉強会です。発表者になると勉強になるというのをコンセプトに、5分から10分程度の発表を参加者が行うことで勉強します。毎月ライトリングトークを毎月行うことを前提に普段の開発をしようということでLT駆動開発と名付けられました。"
+url = "https://github.com/LTDD/Sessions/wiki"
+
+[[items]]
+name = "Hiroshima.rb"
+description = "プログラミングRubyの地域コミュニティです。毎週水曜日の「すごい広島」内でたまーに開催されています。"
+url = "http://hiroshimarb.github.io/"
+
+[[items]]
+name = "日本Androidの会 中国支部"
+description = "日本Androidの会の中国地方のコミュニティです。なぜかスタッフです。最近あまり活動していません。"
+url = "http://www.android-group.jp/index.php?%A5%EF%A1%BC%A5%AD%A5%F3%A5%B0%A5%B0%A5%EB%A1%BC%A5%D7%2F%C3%E6%B9%F1%BB%D9%C9%F4"
+
+[[items]]
+name = "CSS Nite in HIROSHIMA"
+description = "Web制作に関わる方のためのセミナーイベントの広島版です。なぜだかわからないけど、2013年ぐらいから副委員長です。"
+url = "http://cssnite.webtouchmeeting.com/"
+
+[[items]]
+name = "Augment8"
+description = "デジタル技術を駆使して各種イベントを盛り上げるためにクリエイターが集まって生まれたクリエイティブユニットです。水色としてひっそり活動しています"
+url = "http://augment8.me"
+
+[[items]]
+name = "広探ゲーム"
+description = "広島の市内電車をつかったスゴロクゲームです。サブ開発者として応援しています。"
+url = "http://www.hirotangame.net/"
+
+[[items]]
+name = "Code for Hiroshima"
+description = "Codeのチカラで広島の課題を解決します。"
+url = "http://code4hiroshima.org"
