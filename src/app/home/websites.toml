@@ -1,0 +1,48 @@
+title = "ウェブサイト"
+description = "運営しているウェブサイトです。ブログもあればウェブアプリケーションもまざっています。"
+
+[[items]]
+name = "そんなこと覚えてない"
+description = "技術系のメモを残しているブログです。"
+url = "http://blog.eiel.info/"
+
+[[items]]
+name = "日常と勉強会と広島と。"
+description = "勉強会に参加したことや広島での出来事を友人という設定で書いている日記です。"
+url = "http://eielh-life.tumblr.com/"
+
+[[items]]
+name = "俺のGitHub Feed!!"
+description = "GitHub のフィードで気になったことをメモしているだけのブログです。"
+url = "http://githubfeed.eiel.info/"
+
+[[items]]
+name = "いつか役に立つ"
+description = "いつか引用したい言葉とかを記録しているブログです。"
+url = "http://alquote.tumblr.com/"
+
+[[items]]
+name = "弐寺に中毒気味。"
+description = "音ゲーの記録をしているだけのブログです。"
+url = "http://eiel-iidx.tumblr.com/"
+
+[[items]]
+name = "Rails Doc"
+description = "Ruby on Rails のソースコードリーディングのメモです。ところどころリンクが切れているので GitHub のリポジトリから閲覧するほうがよいかもしれません。Hakyll を利用しています。"
+url = "http://railsdoc.eiel.info/"
+
+[[items]]
+name = "とある我馬の非公式(ファンサイト)"
+description = "広島にあるとんこつラーメン屋の我馬を応援するサイトです。Ruby on Rails で作成しています。"
+url = "http://gaba.eiel.info/"
+
+[[items]]
+name = "かけなびまとめサイト"
+description = "デスマ神とよばれる人の書き込みをまとめています。"
+url = "http://kakenavi.eiel.info/"
+
+[[items]]
+name = "旧そんなこと覚えてない"
+description = "過去の技術系メモをしていたブログです。"
+url = "http://d.hatena.ne.jp/eiel/"
+
