@@ -1,0 +1,4 @@
+Key fingerprint = 7E3C 0C7E 0C22 FD81 D98F  55EE 0ABB ACAB CA56 6D81
+  uid                  Tomohiko Himura <eiel.hal at gmail.com>
+  uid                  Tomohiko Himura <tomohiko.himura at gmail.com>
+  sub   2048R/72D733CE 2009-11-21
