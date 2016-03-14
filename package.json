@@ -92,6 +92,7 @@
     "rimraf": "^2.5.2",
     "source-map-loader": "^0.1.5",
     "style-loader": "^0.13.0",
+    "toml-loader": "^1.0.0",
     "ts-helper": "0.0.1",
     "ts-node": "^0.7.0",
     "tslint": "^3.6.0",

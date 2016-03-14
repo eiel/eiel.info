@@ -157,6 +157,8 @@ module.exports = {
       //
       // See: https://github.com/webpack/json-loader
       {test: /\.json$/, loader: 'json-loader'},
+      {test: /\.toml$/, loader: 'toml-loader'},
+
 
       // Raw loader support for *.css files
       // Returns file content as string
