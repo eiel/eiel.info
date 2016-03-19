@@ -28,6 +28,7 @@ import {XLarge} from './directives/x-large';
 export class Home {
   // Set our default values
   localState = { value: '' };
+  sns = require('./sns.toml');
   // TypeScript public modifiers
   constructor(public appState: AppState, public title: Title) {
 
