@@ -10,12 +10,22 @@ import {Component} from 'angular2/core';
   template: require('./eiel.html')
 })
 export class Eiel {
-  sns = require('./../eiel/sns.toml');
+  sns = require('./sns.toml');
+  community = require('./community.toml');
+  pageState = 'sns';
 
   constructor() {
   }
 
   ngOnInit() {
+  }
+
+  openCommunity() {
+    this.pageState = 'community';
+  }
+
+  openSns() {
+    this.pageState = 'sns';
   }
 
 }

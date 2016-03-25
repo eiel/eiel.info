@@ -1,17 +1,31 @@
-<md-toolbar [color]="myColor">
+<md-toolbar color="primary">
   <h1>eiel.info</h1>
 </md-toolbar>
 
-<md-toolbar>
+<md-toolbar (click)="openSns()">
   <h2>利用サービス</h2>
 </md-toolbar>
 
-<span *ngFor="#service of sns.services">
+<div *ngIf="pageState == 'sns'">
+  <span *ngFor="#service of sns.services">
   <a md-button [href]="service.url">
     {{service.name}}
   </a>
 </span>
+</div>
 
-<md-toolbar>
+<md-toolbar (click)="openCommunity()">
   <h2>コミュニティ</h2>
 </md-toolbar>
+<div *ngIf="pageState == 'community'">
+  <div *ngFor="#c of community.items">
+  <md-card md-card>
+    <md-card-title>
+      <a md-button [href]="c.url">{{c.name}}</a>
+    </md-card-title>
+    <md-card-content>
+      {{c.description}}
+    </md-card-content>
+  </md-card>
+</div>
+</div>
