@@ -29,7 +29,6 @@ export class Home {
   // Set our default values
   localState = { value: '' };
   // TypeScript public modifiers
-  sns = require('./sns.toml');
 
   constructor(public appState: AppState, public title: Title) {
 

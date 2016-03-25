@@ -8,6 +8,8 @@ import {Home} from './home';
 import {AppState} from './app.service';
 import {RouterActive} from './router-active';
 
+import {Eiel} from './eiel';
+
 /*
  * App Component
  * Top Level Component
@@ -16,7 +18,7 @@ import {RouterActive} from './router-active';
   selector: 'app',
   pipes: [ ],
   providers: [ ],
-  directives: [ RouterActive ],
+  directives: [ RouterActive, Eiel ],
   encapsulation: ViewEncapsulation.None,
   styles: [`
     body {
@@ -36,6 +38,8 @@ import {RouterActive} from './router-active';
       background-color: lightgray;
     }
   `],
+  template: require('./app.html')
+  /*
   template: `
     <md-toolbar color="primary">
       <span>{{ name }}</span>
@@ -69,6 +73,7 @@ import {RouterActive} from './router-active';
       </div>
     </footer>
   `
+  */
 })
 @RouteConfig([
   { path: '/',      name: 'Index', component: Home, useAsDefault: true },

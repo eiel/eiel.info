@@ -1,0 +1,17 @@
+<md-toolbar [color]="myColor">
+  <h1>eiel.info</h1>
+</md-toolbar>
+
+<md-toolbar>
+  <h2>利用サービス</h2>
+</md-toolbar>
+
+<span *ngFor="#service of sns.services">
+  <a md-button [href]="service.url">
+    {{service.name}}
+  </a>
+</span>
+
+<md-toolbar>
+  <h2>コミュニティ</h2>
+</md-toolbar>
