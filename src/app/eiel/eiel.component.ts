@@ -12,6 +12,7 @@ import {Component} from 'angular2/core';
 export class Eiel {
   sns = require('./sns.toml');
   community = require('./community.toml');
+  application = require('./ios-application.toml');
   pageState = 'sns';
 
   constructor() {
@@ -26,6 +27,10 @@ export class Eiel {
 
   openSns() {
     this.pageState = 'sns';
+  }
+
+  openIOSApplication() {
+    this.pageState = 'iOSApplication'
   }
 
 }

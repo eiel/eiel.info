@@ -15,7 +15,7 @@
 </div>
 
 <md-toolbar (click)="openCommunity()">
-  <h2>コミュニティ</h2>
+  <h2>参加コミュニティ</h2>
 </md-toolbar>
 <div *ngIf="pageState == 'community'">
   <div *ngFor="#c of community.items">
@@ -28,4 +28,20 @@
     </md-card-content>
   </md-card>
 </div>
+</div>
+
+<md-toolbar (click)="openIOSApplication()">
+  <h2>iOSApplication</h2>
+</md-toolbar>
+<div *ngIf="pageState == 'iOSApplication'">
+  <div *ngFor="#a of application.items">
+    <md-card md-card>
+      <md-card-title>
+        <a md-button [href]="a.url">{{a.name}}</a>
+      </md-card-title>
+      <md-card-content>
+        {{a.description}}
+      </md-card-content>
+    </md-card>
+  </div>
 </div>
