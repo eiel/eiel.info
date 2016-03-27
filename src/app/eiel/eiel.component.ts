@@ -13,6 +13,7 @@ export class Eiel {
   sns = require('./sns.toml');
   community = require('./community.toml');
   application = require('./ios-application.toml');
+  websites = require('./websites.toml');
   pageState = 'sns';
 
   constructor() {
@@ -31,6 +32,10 @@ export class Eiel {
 
   openIOSApplication() {
     this.pageState = 'iOSApplication'
+  }
+
+  openWebsite() {
+    this.pageState = 'Website'
   }
 
 }

@@ -45,3 +45,19 @@
     </md-card>
   </div>
 </div>
+
+<md-toolbar (click)="openWebsite()">
+  <h2>ウェブサイト</h2>
+</md-toolbar>
+<div *ngIf="pageState == 'Website'">
+  <div *ngFor="#item of websites.items">
+    <md-card md-card>
+      <md-card-title>
+        <a md-button [href]="item.url">{{item.name}}</a>
+      </md-card-title>
+      <md-card-content>
+        {{item.description}}
+      </md-card-content>
+    </md-card>
+  </div>
+</div>
