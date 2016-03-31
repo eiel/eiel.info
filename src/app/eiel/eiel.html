@@ -61,3 +61,19 @@
     </md-card>
   </div>
 </div>
+
+<md-toolbar (click)="openLink()">
+  <h2>その他のリンク</h2>
+</md-toolbar>
+<div *ngIf="pageState == 'Link'">
+  <div *ngFor="#item of links.items">
+    <md-card md-card>
+      <md-card-title>
+        <a md-button [href]="item.url">{{item.name}}</a>
+      </md-card-title>
+      <md-card-content>
+        {{item.description}}
+      </md-card-content>
+    </md-card>
+  </div>
+</div>

@@ -14,6 +14,7 @@ export class Eiel {
   community = require('./community.toml');
   application = require('./ios-application.toml');
   websites = require('./websites.toml');
+  links = require('./links.toml');
   pageState = 'sns';
 
   constructor() {
@@ -38,5 +39,8 @@ export class Eiel {
     this.pageState = 'Website'
   }
 
+  openLink() {
+    this.pageState = 'Link'
+  }
 }
 
