@@ -23,24 +23,32 @@ export class Eiel {
   ngOnInit() {
   }
 
+  baseToggle(state: String) {
+    if (this.pageState == state) {
+      this.pageState = 'none';
+    } else {
+      this.pageState = state;
+    }
+  }
+
   openCommunity() {
-    this.pageState = 'community';
+    this.baseToggle('community');
   }
 
   openSns() {
-    this.pageState = 'sns';
+    this.baseToggle('sns');
   }
 
   openIOSApplication() {
-    this.pageState = 'iOSApplication'
+    this.baseToggle('iOSApplication');
   }
 
   openWebsite() {
-    this.pageState = 'Website'
+    this.baseToggle('Website');
   }
 
   openLink() {
-    this.pageState = 'Link'
+    this.baseToggle('Link');
   }
 }
 
