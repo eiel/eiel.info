@@ -3,13 +3,19 @@ import {Component} from 'angular2/core';
 @Component({
   selector: 'eiel',
   styles: [`
+    .menu {
+      margin: 2px 0;
+    }
     md-list a {
       color: #666;
     }
-    .gpg h1 {
-      font-size: 14px;
+    md-card {
+      margin: 10px 4px;
     }
-    .menu h2 {
+    .gpg {
+      margin: 10px 4px;
+    }
+    h2 {
       font-size: 16px;
      }
   `],
