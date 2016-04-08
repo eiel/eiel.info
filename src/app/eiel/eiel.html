@@ -2,7 +2,7 @@
   <h1>eiel.info</h1>
 </md-toolbar>
 
-<md-toolbar (click)="openSns()">
+<md-toolbar (click)="openSns()" class="menu">
   <h2>利用サービス</h2>
 </md-toolbar>
 
@@ -14,7 +14,7 @@
 </span>
 </div>
 
-<md-toolbar (click)="openCommunity()">
+<md-toolbar (click)="openCommunity()" class="menu">
   <h2>参加コミュニティ</h2>
 </md-toolbar>
 <div *ngIf="pageState == 'community'">
@@ -30,7 +30,7 @@
 </div>
 </div>
 
-<md-toolbar (click)="openIOSApplication()">
+<md-toolbar (click)="openIOSApplication()" class="menu">
   <h2>iOSApplication</h2>
 </md-toolbar>
 <div *ngIf="pageState == 'iOSApplication'">
@@ -46,7 +46,7 @@
   </div>
 </div>
 
-<md-toolbar (click)="openWebsite()">
+<md-toolbar (click)="openWebsite()"  class="menu">
   <h2>ウェブサイト</h2>
 </md-toolbar>
 <div *ngIf="pageState == 'Website'">
@@ -62,7 +62,7 @@
   </div>
 </div>
 
-<md-toolbar (click)="openLink()">
+<md-toolbar (click)="openLink()" class="menu">
   <h2>その他のリンク</h2>
 </md-toolbar>
 <div *ngIf="pageState == 'Link'">
@@ -77,3 +77,12 @@
     </md-card>
   </div>
 </div>
+
+<md-card md-card class="gpg">
+  <md-card-title>
+    <h2>GPG</h2>
+  </md-card-title>
+  <md-card-content>
+    {{gpg}}
+  </md-card-content>
+</md-card>

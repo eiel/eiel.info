@@ -6,6 +6,12 @@ import {Component} from 'angular2/core';
     md-list a {
       color: #666;
     }
+    .gpg h1 {
+      font-size: 14px;
+    }
+    .menu h2 {
+      font-size: 16px;
+     }
   `],
   template: require('./eiel.html')
 })
@@ -15,6 +21,7 @@ export class Eiel {
   application = require('./ios-application.toml');
   websites = require('./websites.toml');
   links = require('./links.toml');
+  gpg = require = require('raw!./gpg.txt');
   pageState = 'sns';
 
   constructor() {
