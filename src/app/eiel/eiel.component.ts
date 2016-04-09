@@ -28,7 +28,7 @@ export class Eiel {
   websites = require('./websites.toml');
   links = require('./links.toml');
   gpg = require = require('raw!./gpg.txt');
-  pageState = 'sns';
+  pageState: string = 'sns';
 
   constructor() {
   }
@@ -36,7 +36,7 @@ export class Eiel {
   ngOnInit() {
   }
 
-  baseToggle(state: String) {
+  baseToggle(state: string) {
     if (this.pageState == state) {
       this.pageState = 'none';
     } else {
