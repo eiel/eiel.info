@@ -5,8 +5,11 @@ import FlatButton from 'material-ui/FlatButton';
 import RaisedButton from 'material-ui/RaisedButton';
 import Avatar from 'material-ui/Avatar';
 import Dialog from 'material-ui/Dialog';
-import IconButton from 'material-ui/IconButton';
+import FontIcon from 'material-ui/FontIcon';
+import {Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'material-ui/Card';
+import Subheader from 'material-ui/Subheader';
 import Paper from 'material-ui/Paper';
+
 
 import moment from 'moment';
 moment.locale('ja');
@@ -28,6 +31,17 @@ let config = {
 
 firebase.initializeApp(config);
 
+let tilesData = [
+    {
+        title: 'GitHub'
+    },
+    {
+        title: 'Google'
+    },
+    {
+        title: 'Google'
+    }
+];
 
 let provider = new firebase.auth.GoogleAuthProvider();
 let authGoogle = () => {
@@ -80,7 +94,7 @@ class App extends Component {
                 this.setState({messages});
 
                 let updates = {};
-                let deleteKeys = keys.splice(0,length-5);
+                let deleteKeys = keys.splice(0,length-20);
                 for (let key of deleteKeys) {
                     updates[key] = null;
                 }
@@ -154,23 +168,69 @@ class App extends Component {
 
         const message = (() => {
             return this.state.messages.map((message) => {
-                return <Paper key={message.created_at} style={{margin: "10px", padding: "8px"}} zDepth={2}>
-                    <Avatar src={message.photoURL} style={{"margin-right": "10px"}}/>
-                    {message.message} <span style={{color: "#999", "font-sizei": -1}}>{moment(message.created_at).fromNow()}</span>
-                </Paper>
+                return <Card expanded={this.state.expanded} >
+                    <CardHeader
+                        title={message.message}
+                        subtitle={moment(message.created_at).fromNow()}
+                        avatar={<Avatar src={message.photoURL}/>}/>
+                </Card>
             });
         })();
         return (
             <MuiThemeProvider>
                 <div>
-                    <AppBar title="eiel.info" iconElementRight={this.auth()} />
+                    <AppBar title="eiel.info" iconElementRight={this.auth()} iconElementLeft={<FontIcon className="fa" />} />
+
+                    <RaisedButton
+                        href="https://github.com/eiel"
+                        target="_blank"
+                        label="GitHub"
+                        secondary={true}
+                        icon={<FontIcon className="fa fa-github" />}
+                    />
+
+                    <RaisedButton
+                        href="https://twitter.com/eielh"
+                        target="_blank"
+                        label="Twitter"
+                        secondary={true}
+                        icon={<FontIcon className="fa fa-twitter" />}
+                    />
+
+                    <RaisedButton
+                        href="https://www.facebook.com/eielh"
+                        target="_blank"
+                        label="Facebook"
+                        secondary={true}
+                        icon={<FontIcon className="fa fa-facebook" />}
+                    />
+
+                    <RaisedButton
+                        href="http://qiita.com/eielh"
+                        target="_blank"
+                        label="Qiita"
+                        secondary={true}
+                        icon={<FontIcon className="fa fa-search" />}
+                    />
+
+                    <RaisedButton
+                        href="https://plus.google.com/+himuratomohiko"
+                        target="_blank"
+                        label="Google+"
+                        secondary={true}
+                        icon={<FontIcon className="fa fa-google-plus" />}
+                    />
+
+                    <RaisedButton
+                        href="https://www.flickr.com/photos/43922152@N04/"
+                        target="_blank"
+                        label="Flickr"
+                        secondary={true}
+                        icon={<FontIcon className="fa fa-flickr" />}
+                    />
 
                     {userMessage}
                     {message}
-
-
-
-                    <IconButton className="fa fa-github" />
 
                     <Dialog
                         title="サインアウトしますか?"
