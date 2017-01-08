@@ -5,7 +5,7 @@ import firebase from 'firebase/app'
 import {} from 'firebase/auth'
 import {} from 'firebase/database'
 
-import { setMessages, setUser } from '../actions';
+import { setMessages, setUser, setOpenSignOutDailog } from '../actions';
 
 const config = {
     apiKey: "AIzaSyDpbq9hDmGyrzYJcGlvwrjJXL-01No3XNA",
@@ -76,6 +76,7 @@ function intialFirebase(dispatch) {
 function mapStateToProps(state) {
     return {
         user: state.user,
+        isOpenSignOutDialog: state.isOpenSignOutDialog,
         onClick: () => {
             addMessage(`${state.user.displayName}さんが挨拶しました。`, state.user.photoURL)
         },
@@ -93,6 +94,12 @@ function mapDispatchToProps(dispatch) {
                 .then(this.handleCloseSignOutDialog)
                 .then(() => { dispatch(setUser(null)); })
                 .catch((err) => { console.log(err); });
+        },
+        onOpenSignOutDialog: () => {
+            dispatch(setOpenSignOutDailog(true))
+        },
+        onCloseSignOutDialog: () => {
+            dispatch(setOpenSignOutDailog(false))
         }
     };
 }

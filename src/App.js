@@ -42,14 +42,6 @@ class App extends Component {
 
     }
 
-    handleOpenSignOutDialog = () => {
-        this.setState({signOutDialog: true});
-    }
-
-    handleCloseSignOutDialog = () => {
-        this.setState({signOutDialog: false});
-    }
-
     auth() {
         if (this.props.user) {
             return <div onClick={this.props.onOpenSignOutDialog}>
@@ -63,18 +55,19 @@ class App extends Component {
 
     render() {
         const handleSignOutWithClose = () => {
-            this.handleSignOut();
+            this.props.onCloseSignOutDialog();
+            this.props.onSignOut();
         };
         const actions = [
             <FlatButton
                 label="キャンセル"
-                onClick={this.handleCloseSignOutDialog}
+                onClick={this.props.onCloseSignOutDialog}
             />,
             <FlatButton
                 label="サインアウト"
                 primary={true}
                 keyboardFocused={true}
-                onClick={this.props.onSignOut}
+                onClick={handleSignOutWithClose}
             />,
         ];
 
@@ -105,7 +98,7 @@ class App extends Component {
                         title="サインアウトしますか?"
                         actions={actions}
                         modal={true}
-                        open={this.state.signOutDialog}
+                        open={this.props.isOpenSignOutDialog}
                         onRequestClose={this.handleCloseSignOutDialog}
                     />
                 </div>
