@@ -40,18 +40,6 @@ const config = {
 
 firebase.initializeApp(config);
 
-let tilesData = [
-    {
-        title: 'GitHub'
-    },
-    {
-        title: 'Google'
-    },
-    {
-        title: 'Google'
-    }
-];
-
 let provider = new firebase.auth.GoogleAuthProvider();
 let authGoogle = () => {
     firebase.auth().signInWithPopup(provider).then(function(result) {
