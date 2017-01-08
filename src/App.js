@@ -7,11 +7,11 @@ import RaisedButton from 'material-ui/RaisedButton';
 import Avatar from 'material-ui/Avatar';
 import Dialog from 'material-ui/Dialog';
 import FontIcon from 'material-ui/FontIcon';
-import {Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'material-ui/Card';
 
 import Paper from 'material-ui/Paper';
 
 import SNSButtonList from './SNSButtonList';
+import MessageList from './MessageList';
 
 
 import moment from 'moment';
@@ -165,14 +165,6 @@ class App extends Component {
         })();
 
         const message = (() => {
-            return this.state.messages.map((message) => {
-                return <Card expanded={this.state.expanded} >
-                    <CardHeader
-                        title={message.message}
-                        subtitle={moment(message.created_at).fromNow()}
-                        avatar={<Avatar src={message.photoURL}/>}/>
-                </Card>
-            });
         })();
 
         return (
@@ -182,7 +174,8 @@ class App extends Component {
                     <SNSButtonList />
 
                     {userMessage}
-                    {message}
+
+                    <MessageList messages={this.state.messages} />
 
                     <Dialog
                         title="サインアウトしますか?"
