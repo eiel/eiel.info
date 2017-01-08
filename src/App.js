@@ -8,9 +8,10 @@ import Avatar from 'material-ui/Avatar';
 import Dialog from 'material-ui/Dialog';
 import FontIcon from 'material-ui/FontIcon';
 import {Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'material-ui/Card';
-import Subheader from 'material-ui/Subheader';
 
 import Paper from 'material-ui/Paper';
+
+import SNSButtonList from './SNSButtonList';
 
 
 import moment from 'moment';
@@ -173,58 +174,12 @@ class App extends Component {
                 </Card>
             });
         })();
+
         return (
             <MuiThemeProvider muiTheme={muiTheme}>
                 <div>
                     <AppBar title="eiel.info" iconElementRight={this.auth()} iconElementLeft={<FontIcon className="fa" />} />
-
-                    <RaisedButton
-                        href="https://github.com/eiel"
-                        target="_blank"
-                        label="GitHub"
-                        secondary={true}
-                        icon={<FontIcon className="fa fa-github" />}
-                    />
-
-                    <RaisedButton
-                        href="https://twitter.com/eielh"
-                        target="_blank"
-                        label="Twitter"
-                        secondary={true}
-                        icon={<FontIcon className="fa fa-twitter" />}
-                    />
-
-                    <RaisedButton
-                        href="https://www.facebook.com/eielh"
-                        target="_blank"
-                        label="Facebook"
-                        secondary={true}
-                        icon={<FontIcon className="fa fa-facebook" />}
-                    />
-
-                    <RaisedButton
-                        href="http://qiita.com/eielh"
-                        target="_blank"
-                        label="Qiita"
-                        secondary={true}
-                        icon={<FontIcon className="fa fa-search" />}
-                    />
-
-                    <RaisedButton
-                        href="https://plus.google.com/+himuratomohiko"
-                        target="_blank"
-                        label="Google+"
-                        secondary={true}
-                        icon={<FontIcon className="fa fa-google-plus" />}
-                    />
-
-                    <RaisedButton
-                        href="https://www.flickr.com/photos/43922152@N04/"
-                        target="_blank"
-                        label="Flickr"
-                        secondary={true}
-                        icon={<FontIcon className="fa fa-flickr" />}
-                    />
+                    <SNSButtonList />
 
                     {userMessage}
                     {message}
