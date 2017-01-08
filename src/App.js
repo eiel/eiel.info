@@ -164,9 +164,6 @@ class App extends Component {
             }
         })();
 
-        const message = (() => {
-        })();
-
         return (
             <MuiThemeProvider muiTheme={muiTheme}>
                 <div>
@@ -183,8 +180,7 @@ class App extends Component {
                         modal={true}
                         open={this.state.signOutDialog}
                         onRequestClose={this.handleCloseSignOutDialog}
-                    >
-                    </Dialog>
+                    />
                 </div>
             </MuiThemeProvider>
         );
