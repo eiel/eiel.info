@@ -11,7 +11,8 @@ import FontIcon from 'material-ui/FontIcon';
 import Paper from 'material-ui/Paper';
 
 import SNSButtonList from './SNSButtonList';
-import MessageList from './MessageList';
+import MessageList from './containers/MessageList';
+import { addMessage } from './actions';
 
 
 import moment from 'moment';
@@ -70,13 +71,11 @@ class App extends Component {
             messages: []
         };
 
+        /*
         setInterval(() => {
             this.setState({messages: this.state.messages});
         }, 500);
-
-        firebase.auth().onAuthStateChanged((user) => {
-            this.setState({user});
-        });
+        */
 
         firebase.database().ref('messages').on('value', (snapshot) => {
             let values = snapshot.val();
@@ -89,7 +88,8 @@ class App extends Component {
                     let message = values[key];
                     messages.unshift(message);
                 }
-                this.setState({messages});
+
+                this.props.store.dispatch(addMessage(messages));
 
                 let updates = {};
                 let deleteKeys = keys.splice(0,length-20);
@@ -99,6 +99,12 @@ class App extends Component {
                 firebase.database().ref('messages').update(updates);
             }
         });
+
+
+        firebase.auth().onAuthStateChanged((user) => {
+            this.setState({user});
+        });
+
     }
 
     handleOpenSignOutDialog = () => {
@@ -168,11 +174,12 @@ class App extends Component {
             <MuiThemeProvider muiTheme={muiTheme}>
                 <div>
                     <AppBar title="eiel.info" iconElementRight={this.auth()} iconElementLeft={<FontIcon className="fa" />} />
+
                     <SNSButtonList />
 
                     {userMessage}
 
-                    <MessageList messages={this.state.messages} />
+                    <MessageList />
 
                     <Dialog
                         title="サインアウトしますか?"
