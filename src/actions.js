@@ -1,9 +1,16 @@
 // action types
-export const ADD_MESSAGE = 'ADD_MESSAGE';
+export const SET_MESSAGES = 'SET_MESSAGES';
+export const SET_USER = 'SET_USER';
 
 // action creators
-export function addMessage(message) {
+export function setMessages(messages) {
     return {
-        type: ADD_MESSAGE, messages: message
+        type: SET_MESSAGES, messages
+    }
+}
+
+export function setUser(user) {
+    return {
+        type: SET_USER, user
     }
 }

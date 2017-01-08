@@ -12,16 +12,9 @@ import Paper from 'material-ui/Paper';
 
 import SNSButtonList from './SNSButtonList';
 import MessageList from './containers/MessageList';
-import { addMessage } from './actions';
-
 
 import moment from 'moment';
 moment.locale('ja');
-
-import firebase from 'firebase/app'
-import {} from 'firebase/auth'
-import {} from 'firebase/database'
-
 
 import './App.css';
 
@@ -31,36 +24,6 @@ const muiTheme = getMuiTheme({
         accent1Color: "#AA2353",
     },
 });
-
-const config = {
-    apiKey: "AIzaSyDpbq9hDmGyrzYJcGlvwrjJXL-01No3XNA",
-    authDomain: "eiel-91077.firebaseapp.com",
-    databaseURL: "https://eiel-91077.firebaseio.com",
-    storageBucket: "eiel-91077.appspot.com",
-    messagingSenderId: "356361494886"
-};
-
-firebase.initializeApp(config);
-
-let provider = new firebase.auth.GoogleAuthProvider();
-let authGoogle = () => {
-    firebase.auth().signInWithPopup(provider).then(function(result) {
-        // This gives you a Google Access Token. You can use it to access the Google API.
-        let token = result.credential.accessToken;
-        // The signed-in user info.
-        let user = result.user;
-        // ...
-    }).catch(function(error) {
-        // Handle Errors here.
-        let errorCode = error.code;
-        let errorMessage = error.message;
-        // The email of the user's account used.
-        let email = error.email;
-        // The firebase.auth.AuthCredential type that was used.
-        let credential = error.credential;
-        // ...
-    });
-};
 
 class App extends Component {
     constructor() {
@@ -77,34 +40,6 @@ class App extends Component {
         }, 500);
         */
 
-        firebase.database().ref('messages').on('value', (snapshot) => {
-            let values = snapshot.val();
-            if (values) {
-                let keys = Object.keys(values);
-                let length = keys.length;
-
-                let messages = [];
-                for (let key of keys){
-                    let message = values[key];
-                    messages.unshift(message);
-                }
-
-                this.props.store.dispatch(addMessage(messages));
-
-                let updates = {};
-                let deleteKeys = keys.splice(0,length-20);
-                for (let key of deleteKeys) {
-                    updates[key] = null;
-                }
-                firebase.database().ref('messages').update(updates);
-            }
-        });
-
-
-        firebase.auth().onAuthStateChanged((user) => {
-            this.setState({user});
-        });
-
     }
 
     handleOpenSignOutDialog = () => {
@@ -115,31 +50,16 @@ class App extends Component {
         this.setState({signOutDialog: false});
     }
 
-    handleSignOut = () => {
-        firebase.auth().signOut()
-            .then(this.handleCloseSignOutDialog)
-            .then(() => { this.setState({user: null}); })
-            .catch((err) => { console.log(err); });
-    }
-
-    handleSignIn = () => {
-        authGoogle();
-    };
-
     auth() {
-        if (this.state.user) {
-            return <div onClick={this.handleOpenSignOutDialog}>
-                <Avatar src={this.state.user.photoURL} onClick={this.handleOpenSignOutDailog}/>
+        if (this.props.user) {
+            return <div onClick={this.props.onOpenSignOutDialog}>
+                <Avatar src={this.props.user.photoURL} />
             </div>
         } else {
-            return <FlatButton label="Sign In" onClick={this.handleSignIn}/>;
+            return <FlatButton label="Sign In" onClick={this.props.onSignIn}/>;
         }
     }
 
-    addMessage(message) {
-        const key = firebase.database().ref('messages').push().key;
-        firebase.database().ref(`messages/${key}`).set({created_at: new Date().getTime(), message: message, photoURL: this.state.user.photoURL})
-    }
 
     render() {
         const handleSignOutWithClose = () => {
@@ -154,7 +74,7 @@ class App extends Component {
                 label="サインアウト"
                 primary={true}
                 keyboardFocused={true}
-                onClick={this.handleSignOut}
+                onClick={this.props.onSignOut}
             />,
         ];
 
@@ -165,7 +85,7 @@ class App extends Component {
                 </Paper>
             } {
                 return <div style={{"text-align": "center", margin: "10px"}}>
-                    <RaisedButton label="挨拶をする" style={{width:200,margin: "auto", padding: "0"}} onClick={() => { this.addMessage(`${this.state.user.displayName}さんが挨拶しました。`) }}/>
+                    <RaisedButton label="挨拶をする" style={{width:200,margin: "auto", padding: "0"}} onClick={this.props.onClick} />
                 </div>
             }
         })();

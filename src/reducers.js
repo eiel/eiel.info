@@ -1,4 +1,4 @@
-import { ADD_MESSAGE } from './actions'
+import { SET_MESSAGES, SET_USER } from './actions'
 
 const initialState = {
     messages: []
@@ -6,10 +6,10 @@ const initialState = {
 
 export default (state=initialState, action) => {
     switch(action.type) {
-        case ADD_MESSAGE:
-            return {
-                messages: action.messages
-            };
+        case SET_MESSAGES:
+            return {user: state.user, messages: action.messages};
+        case SET_USER:
+            return {user: action.user, messages: state.messages};
         default:
             return state;
     }
