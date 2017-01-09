@@ -13,9 +13,6 @@ import Paper from 'material-ui/Paper';
 import SNSButtonList from './SNSButtonList';
 import MessageList from './containers/MessageList';
 
-import moment from 'moment';
-moment.locale('ja');
-
 import './App.css';
 
 const muiTheme = getMuiTheme({
@@ -33,13 +30,6 @@ class App extends Component {
             signOutDialog: false,
             messages: []
         };
-
-        /*
-        setInterval(() => {
-            this.setState({messages: this.state.messages});
-        }, 500);
-        */
-
     }
 
     auth() {
@@ -76,7 +66,7 @@ class App extends Component {
                 return <Paper style={{margin: "10px", padding: "8px"}} zDepth={3}>
                     サインインすると挨拶ができます
                 </Paper>
-            } {
+            } else {
                 return <div style={{"text-align": "center", margin: "10px"}}>
                     <RaisedButton label="挨拶をする" style={{width:200,margin: "auto", padding: "0"}} onClick={this.props.onClick} />
                 </div>

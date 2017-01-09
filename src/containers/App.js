@@ -5,7 +5,11 @@ import firebase from 'firebase/app'
 import {} from 'firebase/auth'
 import {} from 'firebase/database'
 
-import { setMessages, setUser, setOpenSignOutDailog } from '../actions';
+import moment from 'moment'
+
+import { setMessages, setUser, setOpenSignOutDailog, setNow } from '../actions'
+
+moment.locale('ja');
 
 const config = {
     apiKey: "AIzaSyDpbq9hDmGyrzYJcGlvwrjJXL-01No3XNA",
@@ -26,18 +30,18 @@ let provider = new firebase.auth.GoogleAuthProvider();
 let authGoogle = () => {
     firebase.auth().signInWithPopup(provider).then(function(result) {
         // This gives you a Google Access Token. You can use it to access the Google API.
-        let token = result.credential.accessToken;
+        // let token = result.credential.accessToken;
         // The signed-in user info.
-        let user = result.user;
+        // let user = result.user;
         // ...
     }).catch(function(error) {
         // Handle Errors here.
-        let errorCode = error.code;
-        let errorMessage = error.message;
+        // let errorCode = error.code;
+        // let errorMessage = error.message;
         // The email of the user's account used.
-        let email = error.email;
+        // let email = error.email;
         // The firebase.auth.AuthCredential type that was used.
-        let credential = error.credential;
+        // let credential = error.credential;
         // ...
     });
 };
@@ -86,8 +90,17 @@ function mapStateToProps(state) {
     };
 }
 
+function forceUpdate500msec(dispatch) {
+    setInterval(() => {
+        dispatch(setNow());
+    }, 500);
+    dispatch(setNow());
+}
+
 function mapDispatchToProps(dispatch) {
     intialFirebase(dispatch);
+    forceUpdate500msec(dispatch);
+
     return {
         onSignOut: () =>  {
             firebase.auth().signOut()

@@ -1,8 +1,8 @@
 import { connect } from 'react-redux'
 import MessageList from '../MessageList'
 
-const mapStateToProps = (state, props) => {
-    return { messages: state.messages }
+const mapStateToProps = ({ messages, time }, props) => {
+    return { messages, time }
 };
 
 export default connect(mapStateToProps)(MessageList)
