@@ -123,7 +123,7 @@
     "tslint-loader": "2.1.5",
     "typedoc": "0.3.12",
     "typescript": "1.8.10",
-    "typings": "0.7.12",
+    "typings": "0.8.1",
     "url-loader": "0.5.9",
     "webpack": "1.15.0",
     "webpack-dev-server": "1.16.5",
