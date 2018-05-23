@@ -114,7 +114,7 @@
     "raw-loader": "0.5.1",
     "remap-istanbul": "0.11.1",
     "rimraf": "2.6.2",
-    "source-map-loader": "0.1.6",
+    "source-map-loader": "0.2.3",
     "style-loader": "0.21.0",
     "toml-loader": "1.0.0",
     "ts-helper": "0.0.1",
