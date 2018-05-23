@@ -128,7 +128,7 @@
     "webpack": "1.15.0",
     "webpack-dev-server": "1.16.5",
     "webpack-md5-hash": "0.0.6",
-    "webpack-merge": "0.8.4"
+    "webpack-merge": "0.20.0"
   },
   "repository": {
     "type": "git",
