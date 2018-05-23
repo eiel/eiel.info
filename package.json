@@ -99,7 +99,7 @@
     "istanbul-instrumenter-loader": "0.2.0",
     "json-loader": "0.5.7",
     "karma": "0.13.22",
-    "karma-chrome-launcher": "0.2.3",
+    "karma-chrome-launcher": "2.2.0",
     "karma-coverage": "0.5.5",
     "karma-jasmine": "0.3.8",
     "karma-mocha-reporter": "2.2.5",
