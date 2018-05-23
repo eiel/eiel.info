@@ -83,7 +83,7 @@
   "devDependencies": {
     "angular2-hmr": "0.8.1",
     "awesome-typescript-loader": "5.0.0",
-    "compression-webpack-plugin": "0.4.0",
+    "compression-webpack-plugin": "1.1.11",
     "copy-webpack-plugin": "4.5.1",
     "css-loader": "0.28.11",
     "es6-promise": "3.3.1",
