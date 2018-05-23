@@ -110,7 +110,7 @@
     "parse5": "1.5.1",
     "phantomjs-polyfill": "0.0.2",
     "phantomjs-prebuilt": "2.1.16",
-    "protractor": "3.3.0",
+    "protractor": "5.3.2",
     "raw-loader": "0.5.1",
     "remap-istanbul": "0.11.1",
     "rimraf": "2.6.2",
