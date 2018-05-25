@@ -125,7 +125,7 @@
     "typescript": "1.8.10",
     "typings": "2.1.1",
     "url-loader": "1.0.1",
-    "webpack": "4.8.3",
+    "webpack": "4.9.0",
     "webpack-dev-server": "3.1.4",
     "webpack-md5-hash": "0.0.6",
     "webpack-merge": "4.1.2"
