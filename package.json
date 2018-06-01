@@ -4,23 +4,15 @@
   "private": true,
   "devDependencies": {
     "babel-cli": "6.26.0",
-    "react-scripts": "1.1.4",
-    "redux-devtools": "3.4.1"
+    "babel-preset-react": "^6.24.1",
+    "flow-cli": "^0.0.0-pre",
+    "react-scripts": "1.1.4"
   },
   "dependencies": {
-    "babel-plugin-transform-react-jsx": "6.24.1",
-    "babel-plugin-transform-react-pug": "6.0.0",
-    "babel-preset-env": "1.7.0",
     "firebase": "5.0.4",
-    "material-ui": "0.16.6",
-    "moment": "2.22.2",
     "pug": "2.0.3",
     "react": "16.4.0",
-    "react-dom": "16.4.0",
-    "react-hyperscript": "3.2.0",
-    "react-redux": "5.0.7",
-    "react-tap-event-plugin": "3.0.3",
-    "redux": "4.0.0"
+    "react-dom": "16.4.0"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -1,4 +1,3 @@
-import moment from 'moment'
 
 // action types
 export const SET_MESSAGES = 'SET_MESSAGES';
@@ -22,11 +21,5 @@ export function setUser(user) {
 export function setOpenSignOutDailog(bool) {
     return {
         type: SET_OPEN_SIGN_OUT_DIALOG, value: bool
-    }
-}
-
-export function setNow(now = moment()) {
-    return {
-        type: SET_NOW, value: now
     }
 }

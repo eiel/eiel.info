@@ -28,9 +28,9 @@ const SNSList = [
 ];
 
 const Service = ({url, title}) => {
-  return <li>
+  return (<li>
     <a href={url}>{title}</a>
-  </li>
+  </li>)
 }
 
 const ServiceList = ({list}) => {
@@ -38,9 +38,9 @@ const ServiceList = ({list}) => {
     return <Service key={index} title={title} url={url} />
   })
 
-  return <ul>
+  return (<ul>
     {content}
-  </ul>
+  </ul>)
 }
 
 export default ({title}) => {

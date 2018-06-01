@@ -13,12 +13,12 @@ head
   meta(name="description" content="")
   meta(name="viewport" content="width=device-width, initial-scale=1")
   link(rel="apple-touch-icon" href="apple-touch-icon.png")
-body !{content}
+body(id="root") !{content}
 `);
 const title = "eiel.info"
 const description = "Tomohiko Himura's Website. He a.k.a. eiel"
 const content = ReactDOMServer.renderToStaticMarkup(
-  React.createElement(Site, {"title": title})
+  <Site title={title} />
 )
 const html = fn({content, title, description});
 
