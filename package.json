@@ -4,8 +4,8 @@
   "private": true,
   "devDependencies": {
     "babel-cli": "6.26.0",
-    "babel-preset-react": "^6.24.1",
-    "flow-cli": "^0.0.0-pre",
+    "babel-preset-react": "6.24.1",
+    "flow-cli": "0.0.0-pre",
     "react-scripts": "1.1.4"
   },
   "dependencies": {
