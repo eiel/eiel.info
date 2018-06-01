@@ -3,7 +3,7 @@ import React from 'react';
 import ReactDOMServer from 'react-dom/server';
 import pug from 'pug';
 
-import Site from './components/Site'
+import Site from '../src/components/Site'
 
 const fn = pug.compile(`doctype html
 head
