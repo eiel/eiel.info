@@ -45,9 +45,8 @@ const ServiceList = ({list}) => {
 
 export default ({title}) => {
   const list = SNSList.map(({href, label}) => { return { title: label, url: href } });
-  return pug`
-    div
-      h1= title
-      ServiceList(list=list)
-  `
+  return (<div>
+    <h1>{title}</h1>
+    <ServiceList list={list} />
+  </div>)
 }
