@@ -6451,11 +6451,9 @@ react-event-listener@^0.4.0:
     prop-types "^15.5.4"
     warning "^3.0.0"
 
-react-hyperscript@2.4.2:
-  version "2.4.2"
-  resolved "https://registry.yarnpkg.com/react-hyperscript/-/react-hyperscript-2.4.2.tgz#c19b1f5a161ca2df10bcce6dd2299e8547a982fe"
-  dependencies:
-    react ">= 0.12.0 < 16.0.0"
+react-hyperscript@3.2.0:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/react-hyperscript/-/react-hyperscript-3.2.0.tgz#24144ff6b1beb07af7154794a782a74b34920868"
 
 react-redux@5.0.1:
   version "5.0.1"
@@ -6545,14 +6543,6 @@ react@16.4.0:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
     prop-types "^15.6.0"
-
-"react@>= 0.12.0 < 16.0.0":
-  version "15.4.2"
-  resolved "https://registry.yarnpkg.com/react/-/react-15.4.2.tgz#41f7991b26185392ba9bae96c8889e7e018397ef"
-  dependencies:
-    fbjs "^0.8.4"
-    loose-envify "^1.1.0"
-    object-assign "^4.1.0"
 
 read-pkg-up@^1.0.1:
   version "1.0.1"

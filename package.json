@@ -17,7 +17,7 @@
     "pug": "2.0.0-rc.3",
     "react": "16.4.0",
     "react-dom": "16.4.0",
-    "react-hyperscript": "2.4.2",
+    "react-hyperscript": "3.2.0",
     "react-redux": "5.0.1",
     "react-tap-event-plugin": "3.0.3",
     "redux": "4.0.0"
