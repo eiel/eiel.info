@@ -22,8 +22,16 @@ const SNSList = [
         label: "Google+",
     },
     {
-        href: "https://www.flickr.com/photos/43922152@N04/",
+      href: "http://eiel.hatenablog.com/",
+      label: "Hatena Blog - 補助人工心臓と子育てとリモートワーク"
+    },
+    {
+        href: "https://www.flickr.com/photos/163677625@N05/",
         label: "Flickr",
+    },
+    {
+        href: "https://www.flickr.com/photos/43922152@N04/",
+        label: "旧Flickr",
     }
 ];
 

@@ -5,6 +5,7 @@
   "devDependencies": {
     "babel-cli": "6.26.0",
     "babel-preset-react": "^6.24.1",
+    "firebase-tools": "^3.18.5",
     "flow-cli": "^0.0.0-pre",
     "react-scripts": "1.1.4"
   },
