@@ -17,7 +17,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "babel-node scripts/generate.js > public/index.html",
+    "build": "babel-node scripts/generate.js",
     "deploy": "npm run build && firebase deploy",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"

@@ -1,7 +1,8 @@
 // @flow
-import React from 'react';
+import React, {Component} from 'react';
 import ReactDOMServer from 'react-dom/server';
 import pug from 'pug';
+import fs from 'fs';
 
 import Site from '../src/components/Site'
 
@@ -17,9 +18,25 @@ body(id="root") !{content}
 `);
 const title = "eiel.info"
 const description = "Tomohiko Himura's Website. He a.k.a. eiel"
-const content = ReactDOMServer.renderToStaticMarkup(
-  <Site title={title} />
-)
-const html = fn({content, title, description});
 
-console.log(html);
+const write = (filename: string, Page: Component)  => {
+  const content = ReactDOMServer.renderToStaticMarkup(
+    <Page {...{title}} />
+  )
+  const html = fn({content, title, description});
+  return new Promise((resolve, reject) => {
+    const path = `public/${filename}`
+    fs.writeFile(path, html, (err) => {
+      if (err) reject(err);
+      else resolve({path, html});
+    })
+  })
+}
+
+const map = [
+  ['index.html', Site]
+]
+Promise.all(
+  map.map(([filename, component]) => write(filename, component)
+    .then(({path}) => console.log(`build ${path}`)) )
+)
