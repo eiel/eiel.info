@@ -16,85 +16,96 @@ import MessageList from './containers/MessageList';
 import './App.css';
 
 const muiTheme = getMuiTheme({
-    palette: {
-        primary1Color: "#0B666C",
-        accent1Color: "#AA2353",
-    },
+  palette: {
+    primary1Color: '#0B666C',
+    accent1Color: '#AA2353'
+  }
 });
 
 class App extends Component {
-    constructor() {
-        super();
-        this.state = {
-            user: false,
-            signOutDialog: false,
-            messages: []
-        };
+  constructor() {
+    super();
+    this.state = {
+      user: false,
+      signOutDialog: false,
+      messages: []
+    };
+  }
+
+  auth() {
+    if (this.props.user) {
+      return (
+        <div onClick={this.props.onOpenSignOutDialog}>
+          <Avatar src={this.props.user.photoURL} />
+        </div>
+      );
     }
+    return <FlatButton label="Sign In" onClick={this.props.onSignIn} />;
+  }
 
-    auth() {
-        if (this.props.user) {
-            return <div onClick={this.props.onOpenSignOutDialog}>
-                <Avatar src={this.props.user.photoURL} />
-            </div>
-        } else {
-            return <FlatButton label="Sign In" onClick={this.props.onSignIn}/>;
-        }
-    }
+  render() {
+    const handleSignOutWithClose = () => {
+      this.props.onCloseSignOutDialog();
+      this.props.onSignOut();
+    };
+    const actions = [
+      <FlatButton
+        label="キャンセル"
+        onClick={this.props.onCloseSignOutDialog}
+      />,
+      <FlatButton
+        label="サインアウト"
+        primary
+        keyboardFocused
+        onClick={handleSignOutWithClose}
+      />
+    ];
 
-
-    render() {
-        const handleSignOutWithClose = () => {
-            this.props.onCloseSignOutDialog();
-            this.props.onSignOut();
-        };
-        const actions = [
-            <FlatButton
-                label="キャンセル"
-                onClick={this.props.onCloseSignOutDialog}
-            />,
-            <FlatButton
-                label="サインアウト"
-                primary={true}
-                keyboardFocused={true}
-                onClick={handleSignOutWithClose}
-            />,
-        ];
-
-        const userMessage = (() => {
-            if (this.state.user === null) {
-                return <Paper style={{margin: "10px", padding: "8px"}} zDepth={3}>
-                    サインインすると挨拶ができます
-                </Paper>
-            } else {
-                return <div style={{"text-align": "center", margin: "10px"}}>
-                    <RaisedButton label="挨拶をする" style={{width:200,margin: "auto", padding: "0"}} onClick={this.props.onClick} />
-                </div>
-            }
-        })();
-
+    const userMessage = (() => {
+      if (this.state.user === null) {
         return (
-            <MuiThemeProvider muiTheme={muiTheme}>
-                <div>
-                    <AppBar title="eiel.info" iconElementRight={this.auth()} iconElementLeft={<FontIcon className="fa" />} />
-
-                    <SNSButtonList />
-
-                    {userMessage}
-
-                    <MessageList />
-
-                    <Dialog
-                        title="サインアウトしますか?"
-                        actions={actions}
-                        modal={true}
-                        open={this.props.isOpenSignOutDialog}
-                        onRequestClose={this.handleCloseSignOutDialog}
-                    />
-                </div>
-            </MuiThemeProvider>
+          <Paper style={{ margin: '10px', padding: '8px' }} zDepth={3}>
+            サインインすると挨拶ができます
+          </Paper>
         );
-    }
+      }
+      return (
+        <div style={{ 'text-align': 'center', margin: '10px' }}>
+          <RaisedButton
+            label="挨拶をする"
+            style={{ width: 200, margin: 'auto', padding: '0' }}
+            onClick={this.props.onClick}
+          />
+        </div>
+      );
+    })();
+
+    return (
+      <MuiThemeProvider muiTheme={muiTheme}>
+        <div>
+          <AppBar
+            title="eiel.info"
+            iconElementRight={this.auth()}
+            iconElementLeft={<FontIcon className="fa" />}
+          />
+
+          <SNSButtonList />
+
+          {userMessage}
+
+          <MessageList />
+
+          <Dialog
+            title="サインアウトしますか?"
+            actions={actions}
+            modal
+            open={this.props.isOpenSignOutDialog}
+            onRequestClose={this.handleCloseSignOutDialog}
+          />
+        </div>
+      </MuiThemeProvider>
+    );
+  }
 }
 
 export default App;
