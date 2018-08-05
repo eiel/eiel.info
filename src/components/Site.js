@@ -48,9 +48,11 @@ const ServiceList = ({ list }) => {
     <Service key={index} title={title} url={url} />
   ));
 
-  return <ul>
+  return (
+<ul>
 {content}
-</ul>;
+</ul>
+);
 };
 
 export default ({ title }) => {

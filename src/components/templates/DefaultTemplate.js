@@ -1,8 +1,16 @@
 // @flow
 import React, { Component } from 'react';
 
-type DefaultTemplateProps = { title: string, description: string, children: Component<{}> }
-const DefaultTemplate = ({ title, description, children }: DefaultTemplateProps) => (
+type DefaultTemplateProps = {
+  title: string,
+  description: string,
+  children: Component<{}>
+};
+const DefaultTemplate = ({
+  title,
+  description,
+  children
+}: DefaultTemplateProps) => (
   <html>
     <head>
       <meta charSet="utf-8" />
@@ -13,8 +21,8 @@ const DefaultTemplate = ({ title, description, children }: DefaultTemplateProps)
       <link rel="apple-touch-icon" href="apple-touch-icon.png" />
     </head>
     <body>
-      {children}
-    </body>
+{children}
+</body>
   </html>
 );
 
