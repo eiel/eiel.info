@@ -1,7 +1,8 @@
 // @flow
 import React, { Component } from 'react';
 
-const DefaultTemplate = ({ title, description, children }) => (
+type DefaultTemplateProps = { title: string, description: string, children: Component<{}> }
+const DefaultTemplate = ({ title, description, children }: DefaultTemplateProps) => (
   <html>
     <head>
       <meta charSet="utf-8" />
