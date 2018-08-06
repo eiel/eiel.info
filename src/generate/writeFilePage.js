@@ -1,9 +1,10 @@
 // @flow
 import React, { Component } from 'react';
 import ReactDOMServer from 'react-dom/server';
-import fs from 'fs';
+import { dirname } from 'path';
+import fs from 'fs-extra';
 
-const writeFilePage = ({
+const writeFilePage = async ({
   filename,
   Page
 }: {
@@ -12,13 +13,10 @@ const writeFilePage = ({
 }): Promise<{ path: string, html: string }> => {
   const content = ReactDOMServer.renderToStaticMarkup(<Page />);
   const html = `<!DOCTYPE html>${content}`;
-  return new Promise((resolve, reject) => {
-    const path = `public/${filename}`;
-    fs.writeFile(path, html, err => {
-      if (err) reject(err);
-      else resolve({ path, html });
-    });
-  });
+  const path = `public/${filename}`;
+  await fs.mkdirp(dirname(path));
+  await fs.writeFile(path, html);
+  return { path, html };
 };
 
 export default writeFilePage;
