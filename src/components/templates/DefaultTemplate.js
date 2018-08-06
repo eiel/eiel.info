@@ -11,7 +11,7 @@ const DefaultTemplate = ({
   description,
   children
 }: DefaultTemplateProps) => (
-  <html>
+  <html lang="ja">
     <head>
       <meta charSet="utf-8" />
       <meta httpEquiv="x-ua-compatible" content="ie=edge" />
@@ -21,8 +21,8 @@ const DefaultTemplate = ({
       <link rel="apple-touch-icon" href="apple-touch-icon.png" />
     </head>
     <body>
-{children}
-</body>
+      {children}
+    </body>
   </html>
 );
 

@@ -7,7 +7,7 @@ const description = "Tomohiko Himura's Website. He a.k.a. eiel";
 
 const GreenRibbon = () => (
   <DefaultTemplate {...{ title, description }}>
-    <p>test</p>
+    <h1>{title}</h1>
   </DefaultTemplate>
 );
 
