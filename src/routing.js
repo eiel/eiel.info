@@ -4,7 +4,7 @@ import GreenRibbon from './components/pages/GreenRibbon';
 
 const routing = [
   { filename: 'index.html', Page: Index },
-  { filename: 'greenribbon/index.html', Page: GreenRibbon }
+  { filename: 'green_ribbon/index.html', Page: GreenRibbon }
 ];
 
 export default routing;
