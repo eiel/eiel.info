@@ -4,9 +4,11 @@
   "private": true,
   "devDependencies": {
     "axios": "^0.18.0",
-    "babel-cli": "6.26.0",
+    "babel-cli": "^6.26.0",
     "babel-eslint": "^8.2.6",
-    "babel-preset-react": "6.24.1",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-flow": "^6.23.0",
+    "babel-preset-react": "^6.24.1",
     "eslint": "^4.19.1",
     "eslint-config-airbnb": "^17.0.0",
     "eslint-config-prettier": "^2.9.0",
