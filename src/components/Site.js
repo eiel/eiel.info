@@ -49,10 +49,10 @@ const ServiceList = ({ list }) => {
   ));
 
   return (
-<ul>
-{content}
-</ul>
-);
+    <ul>
+      {content}
+    </ul>
+  );
 };
 
 export default ({ title }) => {
@@ -60,8 +60,8 @@ export default ({ title }) => {
   return (
     <div>
       <h1>
-{title}
-</h1>
+        {title}
+      </h1>
       <ServiceList list={list} />
     </div>
   );
