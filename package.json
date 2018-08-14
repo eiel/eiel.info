@@ -16,7 +16,7 @@
     "eslint-plugin-react": "7.11.0",
     "firebase-tools": "4.0.2",
     "flow-bin": "0.78.0",
-    "prettier": "1.14.0"
+    "prettier": "1.14.2"
   },
   "dependencies": {
     "react": "16.4.2",
