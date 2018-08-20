@@ -1,10 +1,10 @@
 // @flow
-import React, { Component } from 'react';
+import React, { Node } from 'react';
 
 type DefaultTemplateProps = {
   title: string,
   description: string,
-  children: Component<{}>
+  children: Node,
 };
 const DefaultTemplate = ({
   title,
