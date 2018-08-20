@@ -2,17 +2,21 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const devMode = process.env.NODE_ENV !== 'production';
+const buildMode = process.env.BUILD === 'true';
 
 module.exports = {
   mode: devMode ? 'development' : 'production',
-  entry: './src/index.js',
+  entry: buildMode ? './src/generate.js' : './src/index.js',
   plugins: [
     new MiniCssExtractPlugin({
-      filename: 'index.css',
+      filename: '../public/[name].css',
       chunkFilename: '[id].css'
     }),
-    new HtmlWebpackPlugin()
+    new HtmlWebpackPlugin({
+      template: 'index.html',
+    })
   ],
+  target: 'node',
   module: {
     rules: [
       {
@@ -22,7 +26,7 @@ module.exports = {
       {
         test: /\.css$/,
         use: [
-          devMode
+          devMode && false
             ? 'style-loader'
             : {
                 loader: MiniCssExtractPlugin.loader,
@@ -31,7 +35,9 @@ module.exports = {
           {
             loader: 'css-loader',
             options: {
-              modules: true
+              context: './src/components',
+              modules: true,
+              localIdentName: '[path]___[name]__[local]___[hash:base64:5]',
             }
           }
         ]

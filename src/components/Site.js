@@ -1,4 +1,5 @@
 import React from 'react';
+import './Site.css';
 
 const SNSList = [
   {
@@ -36,10 +37,10 @@ const SNSList = [
 ];
 
 const Service = ({ url, title }) => (
-  <li>
-    <a href={url}>
-{title}
-</a>
+  <li styleName="list">
+    <a styleName="text" href={url}>
+      {title}
+    </a>
   </li>
 );
 

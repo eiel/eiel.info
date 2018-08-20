@@ -7,6 +7,7 @@
     "babel-cli": "6.26.0",
     "babel-eslint": "8.2.6",
     "babel-loader": "^7.1.5",
+    "babel-plugin-react-css-modules": "^3.4.2",
     "babel-preset-env": "^1.7.0",
     "babel-preset-flow": "^6.23.0",
     "babel-preset-react": "6.24.1",
@@ -30,15 +31,17 @@
     "webpack-serve": "^2.0.2"
   },
   "dependencies": {
+    "http-server": "^0.11.1",
     "react": "16.4.2",
     "react-dom": "16.4.2"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "babel-node scripts/generate.js",
+    "build": "BUILD=true webpack && node dist/main.js",
     "deploy": "npm run build && firebase deploy",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "serve": "npx http-server public"
   },
   "main": "index.js",
   "repository": "https://github.com/eiel/eiel.info",
