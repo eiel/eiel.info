@@ -13,7 +13,7 @@ module.exports = {
       chunkFilename: '[id].css'
     }),
     new HtmlWebpackPlugin({
-      template: 'index.html',
+      template: 'index.html'
     })
   ],
   target: 'node',
@@ -21,7 +21,7 @@ module.exports = {
     rules: [
       {
         test: /\.js$/,
-        use: 'babel-loader'
+        loader: 'babel-loader'
       },
       {
         test: /\.css$/,
