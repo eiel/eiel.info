@@ -79,7 +79,7 @@ exports[`render / 1`] = `
     <a
       href="https://github.com/eiel/eiel.info/blob/master/src/components/pages/GreenRibbon.js"
     >
-      編集
+      編集する
     </a>
   </body>
 </html>
