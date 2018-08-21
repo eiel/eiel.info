@@ -42,6 +42,7 @@
     "start": "react-scripts start",
     "build": "BUILD=true webpack && node dist/main.js",
     "deploy": "npm run build && firebase deploy",
+    "lint": "eslint src",
     "test": "jest",
     "eject": "react-scripts eject",
     "serve": "npx http-server public"
