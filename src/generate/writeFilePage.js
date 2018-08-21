@@ -1,3 +1,5 @@
+/* eslint-disable react/jsx-filename-extension, */
+/* eslint-disable import/no-extraneous-dependencies */
 // @flow
 import React, { Component } from 'react';
 import ReactDOMServer from 'react-dom/server';

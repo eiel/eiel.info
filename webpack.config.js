@@ -20,7 +20,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.jsx?$/,
         loader: 'babel-loader'
       },
       {
@@ -37,11 +37,14 @@ module.exports = {
             options: {
               context: './src/components',
               modules: true,
-              localIdentName: '[path]___[name]__[local]___[hash:base64:5]',
+              localIdentName: '[path]___[name]__[local]___[hash:base64:5]'
             }
           }
         ]
       }
     ]
+  },
+  resolve: {
+    extensions: ['.jsx', '.js']
   }
 };
