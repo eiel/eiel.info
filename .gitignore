@@ -132,7 +132,7 @@ npm-debug.log
 # node-waf configuration
 .lock-wscript
 
-# Compiled binary addons (http://nodejs.org/api/addons.html)
+# Compiled binary addons (http//nodejs.org/api/addons.html)
 build/Release
 
 # Dependency directories
@@ -158,3 +158,4 @@ jspm_packages
 # End of https://www.gitignore.io/api/int,intellij,node
 
 build
+.firebaserc

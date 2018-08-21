@@ -41,7 +41,9 @@ const LinkComponent = ({ url, name, description }: Link) => (
 const GreenRibbon = () => (
   <DefaultTemplate {...{ title, description }}>
     <h1 styleName="title">移植医療のために活動する人たちを応援する会</h1>
-    <p>このページは、移植医療のために活動する人たちを応援するために用意したページです。</p>
+    <p>
+      このページは、移植医療のために活動する人たちを応援するために用意したページです。
+    </p>
     <p>個人だからこそできるを主眼にさまざまな情報を提供していく予定です。</p>
     <h2 styleName="h1">リンク</h2>
     <ul styleName="site">{links.map(LinkComponent)}</ul>

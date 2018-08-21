@@ -37,9 +37,7 @@ const SNSList = [
 
 const Service = ({ url, title }) => (
   <li>
-    <a href={url}>
-      {title}
-    </a>
+    <a href={url}>{title}</a>
   </li>
 );
 
@@ -48,20 +46,14 @@ const ServiceList = ({ list }) => {
     <Service key={index} title={title} url={url} />
   ));
 
-  return (
-    <ul>
-      {content}
-    </ul>
-  );
+  return <ul>{content}</ul>;
 };
 
 export default ({ title }) => {
   const list = SNSList.map(({ href, label }) => ({ title: label, url: href }));
   return (
     <div>
-      <h1>
-        {title}
-      </h1>
+      <h1>{title}</h1>
       <ServiceList list={list} />
     </div>
   );
