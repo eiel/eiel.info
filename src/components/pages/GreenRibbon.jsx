@@ -17,6 +17,12 @@ type Link = {
 
 const links: Link[] = [
   {
+    name: 'グリーンリボンキャンペーン',
+    url: 'http://www.green-ribbon.jp/',
+    description:
+      'わかりやすい表現で、臓器医療への理解を深め、意思表示を促すためのキャンペーンサイトです。かわいい検定があり、検定に合格するとグリーンリボンのピンバッジをもらうことができます。ゆるふわな感じなのでぜひ挑戦してみてください。'
+  },
+  {
     name: '(公社)日本臓器移植ネットワーク',
     url: 'https://www.jotnw.or.jp/',
     description:
