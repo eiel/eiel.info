@@ -7,7 +7,7 @@ import './GreenRibbon.css';
 const title = '移植医療への理解を広げる会';
 const description =
   'グリーンリボンをシンボルに、移植医療のために活動する人たちを応援するためのページです。';
-const filename = 'GreenRibbon.js';
+const filename = 'GreenRibbon.jsx';
 
 type Link = {
   url: string,
