@@ -1,8 +1,25 @@
-.___Site__text___3-ynI {
-  color: red;
-  font-size: 10px;
+.pages-___GreenRibbon__title___SAwxI {
+  font-size: 1.2em;
 }
-.___Site__list___3iVzT {
 
+.pages-___GreenRibbon__h1___lzC8D {
+  margin-top: 2em;
+  font-size: 1.1em;
+}
+
+.pages-___GreenRibbon__site___EQa9k {
+  padding-left: 1em;
+}
+
+.pages-___GreenRibbon__site___EQa9k li {
+  margin-top: 0.8em;
+}
+
+.pages-___GreenRibbon__site___EQa9k li:first-child {
+  margin-top: 0;
+}
+
+p {
+  margin: 0.2em 0;
 }
 
