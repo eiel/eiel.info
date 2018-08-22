@@ -28,7 +28,7 @@
     "prettier": "1.14.2",
     "react-test-renderer": "16.4.2",
     "style-loader": "0.22.1",
-    "webpack": "4.17.0",
+    "webpack": "4.17.1",
     "webpack-command": "0.4.1",
     "webpack-serve": "^2.0.2"
   },
