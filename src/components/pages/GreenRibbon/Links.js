@@ -25,3 +25,5 @@ export const Links: Link[] = [
       '移植医療が期待したほど普及が進まないのをみて、立ち上がった市民団体。近年広島支部の活動が活発。'
   }
 ];
+
+export default Links;
