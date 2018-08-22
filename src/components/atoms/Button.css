@@ -5,8 +5,14 @@
   min-height: 44px;
   justify-content: center;
   align-items: center;
-
+  padding: 16px;
+  text-align: center;
   color: seagreen;
-  border: seagreen 1px solid;
+  border: seagreen 3px double;
   text-decoration-line: none;
+  font-weight: bold;
+}
+
+.button:hover {
+  background: #efe;
 }

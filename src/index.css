@@ -16,6 +16,13 @@ p {
 a {
   color: seagreen;
 }
+a:hover {
+  background-color: #efe;
+}
+
+p a {
+  padding: 0.5em;
+}
 
 @media screen and (min-width: 496px) {
   :global #root {
