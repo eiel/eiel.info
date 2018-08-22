@@ -100,7 +100,7 @@ exports[`render / 1`] = `
       </li>
     </ul>
     <a
-      href="https://github.com/eiel/eiel.info/blob/master/src/components/pages/GreenRibbon.js"
+      href="https://github.com/eiel/eiel.info/blob/master/src/components/pages/GreenRibbon.jsx"
     >
       編集する
     </a>
