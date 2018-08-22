@@ -1,5 +1,6 @@
 // @flow
 import React from 'react';
+import Markdown from 'react-markdown';
 import DefaultTemplate from '../templates/DefaultTemplate';
 import { EditButton } from '../atoms/EditButton';
 import './GreenRibbon.css';
@@ -44,23 +45,22 @@ const LinkComponent = ({ url, name, description }: Link) => (
   </li>
 );
 
+const lead = `
+このページは、「移植医療への正しい理解を広げるための活動をする人たち」を応援するために作成しました。
+
+結論を先に述べると、よりたくさんの人が[グリーンリボンキャンペーン](http://www.green-ribbon.jp/)のサイトを見て、 
+[インターネットでの臓器提供意思表示](https://www2.jotnw.or.jp/)をして欲しいと思っています。
+その理由は、臓器医療について理解している人の数を見える化できるからです。
+
+「臓器を提供したい」「臓器を提供したくない」は人それぞれです。まったく問題ありません。
+それよりも沢山の人が移植医療について理解していることが重要だと思います。
+それが結果的に移植医療のあるべき姿へと向かっていくことだと私は考えています。
+`;
+
 const GreenRibbon = ({ isDev }: { isDev: boolean }) => (
   <DefaultTemplate {...{ title, description, isDev }}>
     <h1 styleName="title">移植医療への理解を広げる会</h1>
-    <p>
-      このページは、「移植医療への正しい理解を広げるための活動をする人たち」を応援するために作成しました。
-      結論を先に述べると、よりたくさんの人が
-      <a href="http://www.green-ribbon.jp/">グリーンリボンキャンペーン</a>
-      のサイトを見て、
-      <a href="https://www2.jotnw.or.jp/">インターネットでの臓器提供意思表示</a>
-      をして欲しいと思っています。
-      その理由は、臓器医療について理解している人の数を見える化できるからです。
-    </p>
-    <p>
-      「臓器を提供したい」「臓器を提供したくない」は人それぞれです。まったく問題ありません。
-      それよりも沢山の人が移植医療について理解していることが重要だと思います。
-      それが結果的に移植医療のあるべき姿へと向かっていくことだと私は考えています。
-    </p>
+    <Markdown source={lead} />
     <h1 styleName="h1">リンク</h1>
     <ul styleName="site">{links.map(LinkComponent)}</ul>
     <EditButton {...{ filename }} />

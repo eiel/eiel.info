@@ -16,7 +16,7 @@ module.exports = {
       template: 'index.html'
     })
   ],
-  target: 'node',
+  target: buildMode ? 'node' : undefined,
   module: {
     rules: [
       {
