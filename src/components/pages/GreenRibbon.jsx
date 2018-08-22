@@ -3,22 +3,15 @@ import React from 'react';
 import Markdown from 'react-markdown';
 import DefaultTemplate from '../templates/DefaultTemplate';
 import { EditButton } from '../atoms/EditButton';
+import { Link } from '../atoms/Link';
 import './GreenRibbon.css';
 import { Links } from '../../resources/GreenRibbon/Links';
-import type { Link } from '../../resources/GreenRibbon/Links';
 
 const title = '移植医療への理解を広げる会';
 const description =
   'グリーンリボンをシンボルに、移植医療のために活動する人たちを応援するためのページです。';
 const filename = 'GreenRibbon.jsx';
 
-const LinkComponent = ({ url, name, description }: Link) => (
-  <li>
-    <a href={url}>{name}</a>
-    <br />
-    <p>{description}</p>
-  </li>
-);
 
 const lead = `
 このページは、「移植医療への正しい理解を広げるための活動をする人たち」を応援するために作成しました。
@@ -37,7 +30,7 @@ const GreenRibbon = ({ isDev }: { isDev: boolean }) => (
     <h1 styleName="title">{title}</h1>
     <Markdown source={lead} />
     <h1 styleName="h1">リンク</h1>
-    <ul styleName="site">{Links.map(LinkComponent)}</ul>
+    <ul styleName="site">{Links.map(Link)}</ul>
     <EditButton {...{ filename }} />
   </DefaultTemplate>
 );
