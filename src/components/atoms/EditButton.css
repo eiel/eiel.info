@@ -1,0 +1,15 @@
+.button {
+  display: flex;
+  max-width: 100px;
+  min-height: 44px;
+  justify-content: center;
+  align-items: center;
+  border: #333 1px solid;
+}
+
+.button a {
+  width: 100%;
+  text-align: center;
+  color: #333;
+  text-decoration-line: none;
+}
