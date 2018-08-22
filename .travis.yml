@@ -1,11 +1,14 @@
 language: node_js
 node_js:
 - '8'
+before_install:
+- npm i -g firebase-tools
 script:
 - yarn build
 - yarn test
 - yarn lint
 deploy:
+  skip_cleanup: true
   provider: firebase
   on:
     branch: master
