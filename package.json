@@ -36,7 +36,8 @@
     "http-server": "0.11.1",
     "jest": "23.5.0",
     "react": "16.4.2",
-    "react-dom": "16.4.2"
+    "react-dom": "16.4.2",
+    "react-markdown": "^3.4.1"
   },
   "scripts": {
     "start": "webpack-serve",
