@@ -27,7 +27,11 @@ const DefaultTemplate = ({
         <link rel="apple-touch-icon" href="apple-touch-icon.png" />
         <link rel="stylesheet" type="text/css" href="/main.css" />
       </head>
-      <body>{children}</body>
+      <body>
+        <div>
+          {children}
+        </div>
+      </body>
     </html>
   );
 

@@ -13,8 +13,8 @@ p {
   margin: 0.8em 0;
 }
 
-@media screen and (min-width: 492px) {
-  body {
+@media screen and (min-width: 496px) {
+  :global #root {
     width: 480px;
     margin: auto;
   }

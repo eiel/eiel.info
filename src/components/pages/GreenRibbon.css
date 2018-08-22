@@ -18,7 +18,3 @@
 .site li:first-child {
   margin-top: 0;
 }
-
-:global p {
-  margin: 0.2em 0;
-}

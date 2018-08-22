@@ -8,4 +8,4 @@ import './index.css';
 
 const path = window.location.pathname;
 const Page = routing[path] || routing['/'];
-ReactDOM.render(<Page isDev />, window.document.body);
+ReactDOM.render(<Page isDev />, window.document.getElementById('root'));
