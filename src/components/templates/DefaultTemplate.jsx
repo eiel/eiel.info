@@ -28,7 +28,7 @@ const DefaultTemplate = ({
         <link rel="stylesheet" type="text/css" href="/main.css" />
       </head>
       <body>
-        <div>
+        <div id="root">
           {children}
         </div>
       </body>

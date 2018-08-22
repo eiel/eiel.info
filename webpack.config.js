@@ -26,12 +26,12 @@ module.exports = {
       {
         test: /\.css$/,
         use: [
-          devMode
-            ? 'style-loader'
-            : {
-                loader: MiniCssExtractPlugin.loader,
-                options: { publicPath: '../public' }
-              },
+          buildMode ?
+            {
+              loader: MiniCssExtractPlugin.loader,
+              options: { publicPath: '../public' }
+            }
+            : 'style-loader',
           {
             loader: 'css-loader',
             options: {
