@@ -4,6 +4,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { routing } from './routing';
+import './index.css';
 
 const path = window.location.pathname;
 const Page = routing[path] || routing['/'];

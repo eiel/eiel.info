@@ -1,5 +1,21 @@
 body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+  margin: 0 16px;
+  line-height: 1.5;
+  color: #333;
+  font-family:-apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI","Noto Sans Japanese","ヒラギノ角ゴ ProN W3", Meiryo, sans-serif;
+}
+
+h1 {
+  color: #000;
+}
+
+p {
+  margin: 0.8em 0;
+}
+
+@media screen and (min-width: 492px) {
+  body {
+    width: 480px;
+    margin: auto;
+  }
 }

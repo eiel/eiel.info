@@ -1,6 +1,7 @@
 // @flow
 import { routes } from './routing';
 import writeFilePage from './generate/writeFilePage';
+import './index.css';
 
 Promise.all(
   routes.map(value =>
