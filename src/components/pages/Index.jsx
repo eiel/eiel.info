@@ -6,8 +6,8 @@ import Site from '../organisms/Site';
 const title = 'eiel.info';
 const description = "Tomohiko Himura's Website. He a.k.a. eiel";
 
-const Index = () => (
-  <DefaultTemplate {...{ title, description }}>
+const Index = ({ isDev }: { isDev: boolean }) => (
+  <DefaultTemplate {...{ title, description, isDev }}>
     <Site {...{ title }} />
   </DefaultTemplate>
 );

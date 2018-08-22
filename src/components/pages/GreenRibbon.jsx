@@ -44,8 +44,8 @@ const LinkComponent = ({ url, name, description }: Link) => (
   </li>
 );
 
-const GreenRibbon = () => (
-  <DefaultTemplate {...{ title, description }}>
+const GreenRibbon = ({ isDev }: { isDev: boolean }) => (
+  <DefaultTemplate {...{ title, description, isDev }}>
     <h1 styleName="title">移植医療への理解を広げる会</h1>
     <p>
       このページは、「移植医療への正しい理解を広げるための活動をする人たち」を応援するために作成しました。

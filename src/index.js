@@ -4,7 +4,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { routing } from './routing';
-// import './index.css';
 
-const Page = routing[window.location.hash.replace('#', '')] || routing['/'];
-ReactDOM.render(<Page />, window.document.body);
+const path = window.location.pathname;
+const Page = routing[path] || routing['/'];
+ReactDOM.render(<Page isDev />, window.document.body);

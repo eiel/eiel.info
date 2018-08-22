@@ -9,7 +9,7 @@ module.exports = {
   entry: buildMode ? './src/generate.js' : './src/index.js',
   plugins: [
     new MiniCssExtractPlugin({
-      filename: '../public/[name].css',
+      filename: buildMode ? '../public/[name].css' : '[name].css',
       chunkFilename: '[id].css'
     }),
     new HtmlWebpackPlugin({
@@ -26,12 +26,10 @@ module.exports = {
       {
         test: /\.css$/,
         use: [
-          devMode && false
-            ? 'style-loader'
-            : {
-                loader: MiniCssExtractPlugin.loader,
-                options: { publicPath: '../public' }
-              },
+          {
+            loader: MiniCssExtractPlugin.loader,
+            options: { publicPath: '../public' }
+          },
           {
             loader: 'css-loader',
             options: {
@@ -46,5 +44,16 @@ module.exports = {
   },
   resolve: {
     extensions: ['.jsx', '.js']
+  }
+};
+
+module.exports.serve = {
+  add: async (app, middleware, options) => {
+    app.use(async (ctx, next) => {
+      ctx.request.url = ctx.request.url.replace('green_ribbon/', '');
+      await next(ctx);
+    });
+    await middleware.webpack();
+    await middleware.content();
   }
 };
