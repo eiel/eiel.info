@@ -1,6 +1,6 @@
 // @flow
 import React from 'react';
-import type { Link as Props } from '../../resources/GreenRibbon/Links';
+import type { Link as Props } from '../pages/GreenRibbon/Links';
 
 export const Link = ({ url, name, description }: Props) => (
   <li>
