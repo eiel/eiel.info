@@ -21,3 +21,7 @@
   background: #efe;
   color: seagreen;
 }
+
+.button span {
+  display: inline-block;
+}

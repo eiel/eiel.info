@@ -13,10 +13,10 @@ exports[`render / 1`] = `
       httpEquiv="x-ua-compatible"
     />
     <title>
-      移植医療への理解を広げる会
+      グリーンリボンを応援する会
     </title>
     <meta
-      content="グリーンリボンをシンボルに、移植医療のために活動する人たちを応援するためのページです。"
+      content="グリーンリボンをシンボルに、移植医療の普及活動する人たちを応援するページです。"
       name="description"
     />
     <meta
@@ -34,76 +34,288 @@ exports[`render / 1`] = `
     />
   </head>
   <body>
-    <h1
-      className="pages-___GreenRibbon__title___SAwxI"
+    <div
+      id="root"
     >
-      移植医療への理解を広げる会
-    </h1>
-    <p>
-      このページは、「移植医療への正しい理解を広げるための活動をする人たち」を応援するために作成しました。 結論を先に述べると、よりたくさんの人が
-      <a
-        href="http://www.green-ribbon.jp/"
+      <h1
+        className="pages-___GreenRibbon__title___SAwxI"
       >
-        グリーンリボンキャンペーン
-      </a>
-      のサイトを見て、
-      <a
-        href="https://www2.jotnw.or.jp/"
+        グリーンリボンを応援する会
+      </h1>
+      <div
+        className="pages-___GreenRibbon__catchcopy___3QImj"
       >
-        インターネットでの臓器提供意思表示
-      </a>
-      をして欲しいと思っています。 その理由は、臓器医療について理解している人の数を見える化できるからです。
-    </p>
-    <p>
-      「臓器を提供したい」「臓器を提供したくない」は人それぞれです。まったく問題ありません。 それよりも沢山の人が移植医療について理解していることが重要だと思います。 それが結果的に移植医療のあるべき姿へと向かっていくことだと私は考えています。
-    </p>
-    <h1
-      className="pages-___GreenRibbon__h1___lzC8D"
-    >
-      リンク
-    </h1>
-    <ul
-      className="pages-___GreenRibbon__site___EQa9k"
-    >
-      <li>
+        <small>
+          YesでもNoでも命を繋げる
+        </small>
+        <strong>
+          臓器提供の意思登録をしよう
+        </strong>
+      </div>
+      <div
+        className="pages-___GreenRibbon__lead___1CDRY"
+      />
+      <div
+        className="pages-___GreenRibbon__bannar___1tD-u"
+      >
         <a
+          className="atoms-___Button__button___2IVg1"
           href="http://www.green-ribbon.jp/"
         >
-          グリーンリボンキャンペーン
+          <span>
+            <span>
+              キャンペーンサイト
+            </span>
+            <span>
+              で学ぶ
+            </span>
+          </span>
         </a>
-        <br />
-        <p>
-          わかりやすい表現で、臓器医療への理解を深め、意思表示を促すためのキャンペーンサイトです。かわいい検定があり、検定に合格するとグリーンリボンのピンバッジをもらうことができます。ゆるふわな感じなのでぜひ挑戦してみてください。
-        </p>
-      </li>
-      <li>
-        <a
-          href="https://www.jotnw.or.jp/"
+      </div>
+      <section>
+        <h1
+          className="pages-___GreenRibbon__h1___lzC8D"
         >
-          (公社)日本臓器移植ネットワーク
-        </a>
-        <br />
-        <p>
-          JOTと略される。臓器提供を希望する人から、移植を受けたい人へ、臓器を提供する橋渡しをしている重要な組織。
-        </p>
-      </li>
-      <li>
+          よくありそうな質問への回答
+        </h1>
+        <dl>
+          <dt>
+            Q.
+            グリーンリボンって何?
+          </dt>
+          <dd>
+            <div>
+              <p>
+                世界中で使われる移植医療のシンボルです。
+移植医療と言い換えても問題ないことが多そうです。
+    
+              </p>
+            </div>
+          </dd>
+          <dt>
+            Q.
+            グリーンリボンキャンペーンって何?
+          </dt>
+          <dd>
+            <div>
+              <p>
+                (公社）日本臓器移植ネットワークをはじめとする関連団体がより多くの人に移植医療について理解してもらうために展開しているキャンペーンです。
+臓器を提供してもいいという人と移植を受けたい人が結ばれ、 よりたくさんのいのちが救われる社会を目指すのが目的のようです。
+    
+              </p>
+            </div>
+          </dd>
+          <dt>
+            Q.
+            結局何をすればいいの?
+          </dt>
+          <dd>
+            <div>
+              <p>
+                好きな臓器提供の意思表示をして、家族にどの方法で意思表示したのか、なぜそうしたのかを伝えてください。
+意思表示の方法は「健康保険証」、「運転免許証」、「意思表示カード」、「インターネット」の４種類があります。
+このページでは、特にインターネットでの登録をして欲しいと考えています。
+              </p>
+            </div>
+          </dd>
+          <dt>
+            Q.
+            どうしてインターネットをおすすめするのですか?
+          </dt>
+          <dd>
+            <div>
+              <p>
+                グリーンリボンの理解が進んでいることを誰でも比較的早く確認することができるからです。
+
+                <strong>
+                  インターネットで意思表示を登録している人の内訳は臓器移植ネットワークのウェブサイトで公開されています
+                </strong>
+                。
+インターネット以外の方法で登録しているの場合は世論調査のデータぐらいしか見つけられていません。
+              </p>
+            </div>
+          </dd>
+          <dt>
+            Q.
+            ところで、どうしてYesでもNoでも意思表示すること命を繋げられるの?
+          </dt>
+          <dd>
+            <div>
+              <p>
+                推測になりますが、そもそも移植医療が普及しておらず、対応できていない部分があるからではないかと考えられます。
+移植可能な病院が限られていたり、臓器提供が可能になる可能性があってもその判断ができるだけのリソースがなかったりするのだと思われます。
+臓器提供について理解し、意思表示する人が増えるとこういった問題が改善するのではないかと予想しています。
+              </p>
+            </div>
+          </dd>
+          <dt>
+            Q.
+            臓器提供したくないなら意思表示しなくてもいいの?
+          </dt>
+          <dd>
+            <div>
+              <p>
+                確実に提供したくないのであれば、意思表示をしましょう。本人の意思が不明な場合、家族が判断することになります。
+              </p>
+            </div>
+          </dd>
+          <dt>
+            Q.
+            家族に話す必要あるの?
+          </dt>
+          <dd>
+            <div>
+              <p>
+                臓器提供が可能な可能性がある場合に、判断するのは家族です。
+あなたが意思表示していることに気づかないと意思が反映されない恐れがあります。
+また、あなたの死の眼の前にしているときに、判断する必要があります。
+あなたの意思がわかれば、家族の心理的不安も減ることが想像できます。
+              </p>
+            </div>
+          </dd>
+          <dt>
+            Q.
+            なんでこんなページを作ってるんですか?
+          </dt>
+          <dd>
+            <div>
+              <p>
+                移植待機者だからです。移植待機者が自分のためでもありますが、他の移植待機者、これから移植が必要になるかもしれない人たちの役に立つことだと考えたからです。
+待機者もさまざまな不安をもっていますが、臓器提供したい意思を持った人の臓器を繋ぐというのは勇気を貰えるように私は感じます。
+              </p>
+            </div>
+          </dd>
+          <dt>
+            Q.
+            イベントに協賛していますが、そこまでする必要があろのですか?
+          </dt>
+          <dd>
+            <div>
+              <p>
+                少しでも移植待機時間が短くなることにメリットが大きいからです。
+移植待機をするために、自宅を離れて生活をしています。住居費を二重に負担しているため、少しでも移植待機時間が短くなれば十分に価値があるからです。
+また、病気の種類によっては、長く待機するのには大きなリスクがあります。移植待機時間が短いに越したことはありません。
+              </p>
+            </div>
+          </dd>
+        </dl>
+      </section>
+      <div
+        className="pages-___GreenRibbon__bannar___1tD-u"
+      >
         <a
-          href="https://www.greenribbonac.com/"
+          className="atoms-___Button__button___2IVg1"
+          href="http://www.green-ribbon.jp/"
         >
-          NPO法人グリーンリボン推進協会
+          <span>
+            <span>
+              キャンペーンサイト
+            </span>
+            <span>
+              で学ぶ
+            </span>
+          </span>
         </a>
-        <br />
-        <p>
-          移植医療が期待したほど普及が進まないのをみて、立ち上がった市民団体。近年広島支部の活動が活発。
-        </p>
-      </li>
-    </ul>
-    <a
-      href="https://github.com/eiel/eiel.info/blob/master/src/components/pages/GreenRibbon.jsx"
-    >
-      編集する
-    </a>
+      </div>
+      <section>
+        <h1
+          className="pages-___GreenRibbon__h1___lzC8D"
+        >
+          イベント紹介
+        </h1>
+        <ul
+          className="pages-___GreenRibbon__site___EQa9k"
+        >
+          <li>
+            <a
+              href="https://www.greenribbonac.com/%E3%81%B2%E3%82%8D%E3%81%97%E3%81%BE%E3%82%B0%E3%83%AA%E3%83%BC%E3%83%B3%E3%83%AA%E3%83%9C%E3%83%B3-%E3%83%95%E3%82%A7%E3%82%B9-2018/"
+            >
+              ひろしまグリーンリボンフェス2018
+            </a>
+            <br />
+            <p>
+              2018-10-17(水) から 2018-10-21(日)に開催されるイベントで、楽しみながら移植医療について学ぶ一般向けのイベントです。
+            </p>
+          </li>
+        </ul>
+      </section>
+      <div
+        className="pages-___GreenRibbon__bannar___1tD-u"
+      >
+        <a
+          className="atoms-___Button__button___2IVg1"
+          href="https://www2.jotnw.or.jp/"
+        >
+          <span>
+            意思登録をする
+          </span>
+        </a>
+      </div>
+      <div>
+        <h1
+          className="pages-___GreenRibbon__h1___lzC8D"
+        >
+          リンク
+        </h1>
+        <ul
+          className="pages-___GreenRibbon__site___EQa9k"
+        >
+          <li>
+            <a
+              href="http://www.green-ribbon.jp/"
+            >
+              グリーンリボンキャンペーン
+            </a>
+            <br />
+            <p>
+              わかりやすい表現で、臓器医療への理解を深め、意思表示を促すためのキャンペーンサイトです。かわいい検定があり、検定に合格するとグリーンリボンのピンバッジをもらうことができます。ゆるふわな感じなのでぜひ挑戦してみてください。
+            </p>
+          </li>
+          <li>
+            <a
+              href="https://www.jotnw.or.jp/"
+            >
+              (公社)日本臓器移植ネットワーク
+            </a>
+            <br />
+            <p>
+              JOTと略される。臓器提供を希望する人から、移植を受けたい人へ、臓器を提供する橋渡しをしている重要な組織。
+            </p>
+          </li>
+          <li>
+            <a
+              href="https://www.greenribbonac.com/"
+            >
+              NPO法人グリーンリボン推進協会
+            </a>
+            <br />
+            <p>
+              移植医療が期待したほど普及が進まないのをみて、立ち上がった市民団体。近年広島支部の活動が活発。
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div
+        className="pages-___GreenRibbon__bannar___1tD-u"
+      >
+        <a
+          className="atoms-___Button__button___2IVg1"
+          href="https://www2.jotnw.or.jp/"
+        >
+          <span>
+            意思登録をする
+          </span>
+        </a>
+      </div>
+      <a
+        className="atoms-___Button__button___2IVg1"
+        href="https://github.com/eiel/eiel.info/blob/master/src/components/pages/GreenRibbon.jsx"
+      >
+        <span>
+          このページを編集する
+        </span>
+      </a>
+    </div>
   </body>
 </html>
 `;

@@ -56,7 +56,7 @@ module.exports = {
 module.exports.serve = {
   add: async (app, middleware, options) => {
     app.use(async (ctx, next) => {
-      ctx.request.url = ctx.request.url.replace('green_ribbon/', '');
+      ctx.request.url = ctx.request.url.replace('green-ribbon/', '');
       await next(ctx);
     });
     await middleware.webpack();

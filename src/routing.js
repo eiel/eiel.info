@@ -5,7 +5,7 @@ import GreenRibbon from './components/pages/GreenRibbon';
 
 export const routes = [
   { filename: 'index.html', Page: Index },
-  { filename: 'green_ribbon/index.html', Page: GreenRibbon }
+  { filename: 'green-ribbon/index.html', Page: GreenRibbon }
 ];
 
 export const routing = routes.reduce(
