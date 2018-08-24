@@ -9,9 +9,9 @@ import './GreenRibbon.css';
 import { Links } from './GreenRibbon/Links';
 import lead from './GreenRibbon/Lead.md';
 
-const title = '移植医療の発展を応援する会';
+const title = 'グリーンリボンを応援する会';
 const description =
-  'グリーンリボンをシンボルに、移植医療のために活動する人たちを応援するためのページです。';
+  'グリーンリボンをシンボルに、移植医療の普及活動する人たちを応援しています。';
 const filename = 'GreenRibbon.jsx';
 
 const RibbonButton = () => (
@@ -34,9 +34,8 @@ const Title = () => <h1 styleName="title">{title}</h1>;
 
 const Catch = () => (
   <div styleName="catchcopy">
-    <small>臓器を提供しないという意思も</small>
-    <strong>臓器提供の意思登録をして欲しい</strong>
-    <small>日本の移植医療の発展のために</small>
+    <small>YesでもNoでも命を救える</small>
+    <strong>臓器提供の意思登録をしよう</strong>
   </div>
 );
 

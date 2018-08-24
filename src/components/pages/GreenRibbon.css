@@ -26,9 +26,10 @@
 }
 
 .catchcopy {
+  text-align: center;
   font-weight: lighter;
   display: block;
-  margin: 2em 0;
+  margin: 4em 0;
 }
 
 .catchcopy small {
@@ -38,13 +39,13 @@
 
 @media screen and (min-width: 320px) {
   .catchcopy strong{
-    font-size: 1em;
+    font-size: 1.3em;
   }
 }
 
 @media screen and (min-width: 375px) {
   .catchcopy {
-    font-size: 1.3em;
+    font-size: 1.2em;
   }
 }
 
