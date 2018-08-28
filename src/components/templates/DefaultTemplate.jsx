@@ -1,6 +1,9 @@
 // @flow
 import React from 'react';
 import type { Node } from 'react';
+import { GTMInit, GTMBody } from '../atoms';
+
+const GTM_ID = 'GTM-T7VV63D';
 
 type DefaultTemplateProps = {
   title: string,
@@ -20,6 +23,7 @@ const DefaultTemplate = ({
     <html lang="ja">
       <head>
         <meta charSet="utf-8" />
+        <GTMInit id={GTM_ID} />
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
         <title>{title}</title>
         <meta name="description" content={description} />
@@ -28,9 +32,8 @@ const DefaultTemplate = ({
         <link rel="stylesheet" type="text/css" href="/main.css" />
       </head>
       <body>
-        <div id="root">
-          {children}
-        </div>
+        <GTMBody id={GTM_ID} />
+        <div id="root">{children}</div>
       </body>
     </html>
   );
