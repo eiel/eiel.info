@@ -8,6 +8,13 @@ exports[`render / 1`] = `
     <meta
       charSet="utf-8"
     />
+    <script
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "(function(w,d,s,l,i){ w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer', \\"GTM-T7VV63D\\");",
+        }
+      }
+    />
     <meta
       content="ie=edge"
       httpEquiv="x-ua-compatible"
@@ -34,6 +41,19 @@ exports[`render / 1`] = `
     />
   </head>
   <body>
+    <noscript>
+      <iframe
+        height="0"
+        src="https://www.googletagmanager.com/ns.html?id=GTM-T7VV63D"
+        style={
+          Object {
+            "display": "none",
+            "visibility": "hidden",
+          }
+        }
+        width="0"
+      />
+    </noscript>
     <div
       id="root"
     >
