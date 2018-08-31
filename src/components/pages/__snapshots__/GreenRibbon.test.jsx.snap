@@ -51,6 +51,7 @@ exports[`render / 1`] = `
             "visibility": "hidden",
           }
         }
+        title="GTM"
         width="0"
       />
     </noscript>
