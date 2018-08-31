@@ -1,5 +1,5 @@
 {
-  "presets":[["env", { "targets": {"node": "8.11"}}], "react", "flow"],
+  "presets":[["@babel/preset-env", { "targets": {"node": "8.11"}}], "@babel/react", "@babel/flow"],
   "plugins": [
     ["react-css-modules",{
       "context": "./src/components"
