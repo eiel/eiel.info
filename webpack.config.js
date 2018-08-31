@@ -26,11 +26,11 @@ module.exports = {
       {
         test: /\.css$/,
         use: [
-          buildMode ?
-            {
-              loader: MiniCssExtractPlugin.loader,
-              options: { publicPath: '../public' }
-            }
+          buildMode
+            ? {
+                loader: MiniCssExtractPlugin.loader,
+                options: { publicPath: '../public' }
+              }
             : 'style-loader',
           {
             loader: 'css-loader',
@@ -45,6 +45,10 @@ module.exports = {
       {
         test: /\.md$/,
         use: 'raw-loader'
+      },
+      {
+        test: /\.(png|svg|jpg|gif)$/,
+        use: ['file-loader']
       }
     ]
   },
