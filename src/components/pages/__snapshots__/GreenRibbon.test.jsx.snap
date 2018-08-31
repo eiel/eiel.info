@@ -328,6 +328,10 @@ exports[`render / 1`] = `
           </span>
         </a>
       </div>
+      <img
+        alt="グリーンリボンを応援する会のロゴ"
+        src="test-file-stub"
+      />
       <a
         className="atoms-___Button__button___2IVg1"
         href="https://github.com/eiel/eiel.info/blob/master/src/components/pages/GreenRibbon.jsx"

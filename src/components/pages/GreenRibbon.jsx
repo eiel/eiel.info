@@ -9,6 +9,7 @@ import './GreenRibbon.css';
 import { Links } from './GreenRibbon/Links';
 import lead from './GreenRibbon/Lead.md';
 import { QAList } from './GreenRibbon/QAList';
+import { Logo } from '../atoms/Logo';
 
 const title = 'グリーンリボンを応援する会';
 const description =
@@ -97,6 +98,7 @@ const GreenRibbon = ({ isDev }: { isDev: boolean }) => (
     <JotButton />
     <LinkSection />
     <JotButton />
+    <Logo />
     <EditButton {...{ filename }} />
   </DefaultTemplate>
 );
