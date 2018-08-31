@@ -1,17 +1,15 @@
 language: node_js
 node_js:
 - '8'
-before_install:
-- npm i -g firebase-tools
 script:
 - yarn build
 - yarn test
 - yarn lint
+before_deploy:
+- npm i -g firebase-tools
 deploy:
   skip_cleanup: true
-  provider: firebase
+  provider: script
+  script: firebase deploy --token $FIREBASE_TOKEN --project $FIREBASE_PROJECT
   on:
     branch: master
-  token:
-    secure: TckaC4uDgaOuxZBvRRWxya7L5mNyxHK0NGMF6joL1VYZZVNvaH3fAIBpmADVz1XoWBlL7WNOVauBY/yNp5+owwUnCk0fu4R5/v5FcXSWV52J83BeLpzXBb/5jnZ6hlg51iIVGaVseQ+r10j8Y/0f59HoOkW5WIgARe36EdfNN4I=
-  project: $FIREBASE_PROJECT
