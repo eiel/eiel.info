@@ -8,6 +8,13 @@ exports[`render / 1`] = `
     <meta
       charSet="utf-8"
     />
+    <script
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "(function(w,d,s,l,i){ w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer', \\"GTM-T7VV63D\\");",
+        }
+      }
+    />
     <meta
       content="ie=edge"
       httpEquiv="x-ua-compatible"
@@ -34,6 +41,19 @@ exports[`render / 1`] = `
     />
   </head>
   <body>
+    <noscript>
+      <iframe
+        height="0"
+        src="https://www.googletagmanager.com/ns.html?id=GTM-T7VV63D"
+        style={
+          Object {
+            "display": "none",
+            "visibility": "hidden",
+          }
+        }
+        width="0"
+      />
+    </noscript>
     <div
       id="root"
     >
@@ -87,7 +107,7 @@ exports[`render / 1`] = `
             <div>
               <p>
                 世界中で使われる移植医療のシンボルです。
-移植医療と言い換えても問題ないことが多そうです。
+移植医療と言い換えても問題ないでしょう。
     
               </p>
             </div>
@@ -142,9 +162,9 @@ exports[`render / 1`] = `
           <dd>
             <div>
               <p>
-                推測になりますが、そもそも移植医療が普及しておらず、対応できていない部分があるからではないかと考えられます。
-移植可能な病院が限られていたり、臓器提供が可能になる可能性があってもその判断ができるだけのリソースがなかったりするのだと思われます。
-臓器提供について理解し、意思表示する人が増えるとこういった問題が改善するのではないかと予想しています。
+                推測になりますが、そもそも移植医療が普及しておらず、環境が整ってないと考えられます。
+移植可能な病院が限られていたり、脳死判定がそもそも難しく病院にとって負担だったりするのではないかと思います。
+臓器提供について理解し、意思表示する人が増えるとさまざまな問題の改善進むからだと予想しています。
               </p>
             </div>
           </dd>
@@ -187,7 +207,7 @@ exports[`render / 1`] = `
           </dd>
           <dt>
             Q.
-            イベントに協賛していますが、そこまでする必要があろのですか?
+            イベントに協賛していますが、そこまでする必要があるのですか?
           </dt>
           <dd>
             <div>
