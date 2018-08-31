@@ -48,7 +48,7 @@
   },
   "scripts": {
     "start": "webpack-serve",
-    "build": "BUILD=true webpack && node dist/main.js",
+    "build": "BUILD=true webpack && node dist/main.js && mv dist/assets public",
     "deploy": "npm run build && firebase deploy",
     "lint": "eslint src",
     "test": "jest",
