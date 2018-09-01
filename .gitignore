@@ -160,3 +160,4 @@ jspm_packages
 build
 .firebaserc
 public/**/index.html
+public/assets
