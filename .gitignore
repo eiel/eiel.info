@@ -161,3 +161,4 @@ build
 .firebaserc
 public/**/index.html
 public/assets
+*.cache
