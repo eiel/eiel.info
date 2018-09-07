@@ -44,7 +44,7 @@
     "jest": "23.5.0",
     "react": "16.5.0",
     "react-dom": "16.5.0",
-    "react-markdown": "3.5.0"
+    "react-markdown": "3.6.0"
   },
   "scripts": {
     "start": "webpack-serve",
