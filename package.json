@@ -32,7 +32,7 @@
     "mini-css-extract-plugin": "0.4.2",
     "prettier": "1.14.3",
     "raw-loader": "0.5.1",
-    "react-test-renderer": "16.5.1",
+    "react-test-renderer": "16.5.2",
     "regenerator-runtime": "0.12.1",
     "style-loader": "0.23.0",
     "webpack": "4.19.0",
@@ -42,8 +42,8 @@
   "dependencies": {
     "http-server": "0.11.1",
     "jest": "23.6.0",
-    "react": "16.5.1",
-    "react-dom": "16.5.1",
+    "react": "16.5.2",
+    "react-dom": "16.5.2",
     "react-markdown": "3.6.0"
   },
   "scripts": {
