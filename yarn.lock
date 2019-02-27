@@ -1738,10 +1738,10 @@ babel-plugin-jest-hoist@^24.1.0:
   resolved "https://registry.yarnpkg.com/babel-plugin-jest-hoist/-/babel-plugin-jest-hoist-24.1.0.tgz#dfecc491fb15e2668abbd690a697a8fd1411a7f8"
   integrity sha512-gljYrZz8w1b6fJzKcsfKsipSru2DU2DmQ39aB6nV3xQ0DDv3zpIzKGortA5gknrhNnPN8DweaEgrnZdmbGmhnw==
 
-babel-plugin-react-css-modules@5.0.1:
-  version "5.0.1"
-  resolved "https://registry.yarnpkg.com/babel-plugin-react-css-modules/-/babel-plugin-react-css-modules-5.0.1.tgz#88a86329cdf848937396b2fd2d43b27bf8c3d57d"
-  integrity sha512-tINH44L0kzr4GHlYDaXShgprTe4UhuQLWWPZarZxGWjE5CXxb5xtQXsyD8WcviZLuNeujE+0HsSxNoGJ7N95Ww==
+babel-plugin-react-css-modules@5.2.1:
+  version "5.2.1"
+  resolved "https://registry.yarnpkg.com/babel-plugin-react-css-modules/-/babel-plugin-react-css-modules-5.2.1.tgz#68976b8ebbe13311df7f32eafa691fe70a2927ba"
+  integrity sha512-HxnB1bVfedfszES5vxa9OqxmrsgrySpuIoRZTCMgkbzg9WLy7CSHpU9OjgspxfQ9mb60+AcAJdBPxeJ0Qe4TWQ==
   dependencies:
     "@babel/plugin-syntax-jsx" "^7.0.0"
     "@babel/types" "^7.0.0"
