@@ -15,7 +15,7 @@
     "babel-loader": "8.0.5",
     "babel-plugin-react-css-modules": "5.2.3",
     "css-loader": "2.1.1",
-    "eslint": "5.15.3",
+    "eslint": "5.16.0",
     "eslint-config-airbnb": "17.1.0",
     "eslint-config-prettier": "4.1.0",
     "eslint-plugin-import": "2.16.0",
