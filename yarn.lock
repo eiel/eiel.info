@@ -2007,10 +2007,10 @@ babel-plugin-jest-hoist@^24.6.0:
   dependencies:
     "@types/babel__traverse" "^7.0.6"
 
-babel-plugin-react-css-modules@5.2.4:
-  version "5.2.4"
-  resolved "https://registry.yarnpkg.com/babel-plugin-react-css-modules/-/babel-plugin-react-css-modules-5.2.4.tgz#cd8994c4aa11386e75cd95b81871f2fab3a2f48d"
-  integrity sha512-nN3Km/JXzjX0P3ZdY4vM3n4N3ZSX5ismrGyWHlBNucNXPjzA7O3Rt6vPKTDxXWE30XlXlUK26bP3GgQMT38Nzg==
+babel-plugin-react-css-modules@5.2.5:
+  version "5.2.5"
+  resolved "https://registry.yarnpkg.com/babel-plugin-react-css-modules/-/babel-plugin-react-css-modules-5.2.5.tgz#8053f04147d151c6c02ac50ae1c0837a4eeb4464"
+  integrity sha512-fKCNX8GIJMlpBXpNQaUdkuvq+mlvpqih45PtlyvCsZHodm6fk7biR7YNvIB9vaHSt/WchBB+cXCEHxQS/G7B/Q==
   dependencies:
     "@babel/plugin-syntax-jsx" "^7.0.0"
     "@babel/types" "^7.0.0"
