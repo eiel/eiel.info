@@ -30,7 +30,7 @@
     "identity-obj-proxy": "3.0.0",
     "jest-raw-loader": "1.0.1",
     "mini-css-extract-plugin": "2.5.3",
-    "prettier": "1.19.1",
+    "prettier": "2.5.1",
     "raw-loader": "4.0.2",
     "react-test-renderer": "16.14.0",
     "regenerator-runtime": "0.13.9",
