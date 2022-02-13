@@ -11,7 +11,7 @@
     "axios": "0.25.0",
     "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "10.1.0",
-    "babel-jest": "24.9.0",
+    "babel-jest": "27.5.1",
     "babel-loader": "8.2.3",
     "babel-plugin-react-css-modules": "5.2.6",
     "css-loader": "6.6.0",
@@ -41,7 +41,7 @@
   },
   "dependencies": {
     "http-server": "0.13.0",
-    "jest": "24.9.0",
+    "jest": "27.5.1",
     "react": "16.14.0",
     "react-dom": "16.14.0",
     "react-markdown": "3.6.0"
