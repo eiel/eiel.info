@@ -24,7 +24,7 @@
     "eslint-plugin-react": "7.29.0",
     "file-loader": "6.2.0",
     "firebase-tools": "11.2.0",
-    "flow-bin": "0.195.1",
+    "flow-bin": "0.195.2",
     "fs-extra": "11.1.0",
     "html-webpack-plugin": "5.5.0",
     "identity-obj-proxy": "3.0.0",
