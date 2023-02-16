@@ -23,7 +23,7 @@
     "eslint-plugin-prettier": "4.2.1",
     "eslint-plugin-react": "7.32.2",
     "file-loader": "6.2.0",
-    "firebase-tools": "11.23.0",
+    "firebase-tools": "11.23.1",
     "flow-bin": "0.200.0",
     "fs-extra": "11.1.0",
     "html-webpack-plugin": "5.5.0",
