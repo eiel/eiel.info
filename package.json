@@ -34,7 +34,7 @@
     "raw-loader": "4.0.2",
     "react-test-renderer": "18.2.0",
     "regenerator-runtime": "0.13.11",
-    "style-loader": "3.3.2",
+    "style-loader": "3.3.3",
     "webpack": "5.83.1",
     "webpack-command": "0.5.1",
     "webpack-serve": "4.0.0"
