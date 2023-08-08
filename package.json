@@ -33,7 +33,7 @@
     "prettier": "3.0.1",
     "raw-loader": "4.0.2",
     "react-test-renderer": "18.2.0",
-    "regenerator-runtime": "0.13.11",
+    "regenerator-runtime": "0.14.0",
     "style-loader": "3.3.3",
     "webpack": "5.88.2",
     "webpack-command": "0.5.1",
