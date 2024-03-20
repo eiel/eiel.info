@@ -35,7 +35,7 @@
     "react-test-renderer": "18.2.0",
     "regenerator-runtime": "0.14.0",
     "style-loader": "3.3.3",
-    "webpack": "5.88.2",
+    "webpack": "5.91.0",
     "webpack-command": "0.5.1",
     "webpack-serve": "4.0.0"
   },
